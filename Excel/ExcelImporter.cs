@@ -93,7 +93,7 @@ namespace Logy.Api.Mw.Excel
                 {
                     var title = GetTitle(row);
                     var yearsInTitle = ExcelManager.GetYears(title);
-                    var yearInColumn = ExcelManager.GetYear(row);
+                    var yearInColumn = GetYear(row);
                     if (yearsInTitle != null
                         && !string.IsNullOrEmpty(yearInColumn)
                         && !yearsInTitle.Contains(yearInColumn))
@@ -157,5 +157,12 @@ namespace Logy.Api.Mw.Excel
                 descriptionColumn);
             return ExcelManager.TrimTitle(titleValue);
         }
+        
+		internal string GetYear(IRow row)
+		{
+			return ExcelManager.GetValue(
+				row,
+				JsonManager.GetJsonTranslation(ExcelFileColumns.Year));
+		}
     }
 }

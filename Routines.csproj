@@ -31,9 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Logy.Entities">
-      <HintPath>packages\Logy.Entities.1.0.0.36\lib\net40\Logy.Entities.dll</HintPath>
-    </Reference>
     <Reference Include="NPOI">
       <HintPath>packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
     </Reference>
@@ -49,7 +46,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Excel\ExcelFileColumns.cs" />
     <Compile Include="Excel\ExcelManager.cs" />
     <Compile Include="Excel\Tests\EventsIndexing\T1Tests.cs" />
     <Compile Include="Program.cs" />

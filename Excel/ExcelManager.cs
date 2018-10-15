@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-using Logy.Entities.Localization;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
@@ -48,7 +47,7 @@ namespace Logy.Api.Mw.Excel
         public void Read()
         {
             IWorkbook p;
-            using (var fi = File.OpenRead(_path))
+            using (var fi = new FileStream(_path, FileMode.Open, FileAccess.Read))
             {
                 p = _isXlsx ? (IWorkbook)new XSSFWorkbook(fi) : new HSSFWorkbook(fi);
             }
@@ -76,13 +75,6 @@ namespace Logy.Api.Mw.Excel
             }
         }
 
-		internal string GetYear(IRow row)
-		{
-			return GetValue(
-				row,
-				JsonManager.GetJsonTranslation(ExcelFileColumns.Year));
-		}
-                
         internal static string[] GetYears(string title)
         {
             var s = Regex.Match(title, DescDatePattern + ".*").Groups[1].Value.Replace(" ", null);
