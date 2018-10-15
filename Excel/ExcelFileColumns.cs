@@ -1,4 +1,4 @@
-﻿using Logy.MwAgent;
+﻿using Logy.Entities.Localization;
 
 namespace Logy.Api.Mw.Excel
 {

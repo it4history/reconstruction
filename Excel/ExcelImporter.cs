@@ -93,9 +93,7 @@ namespace Logy.Api.Mw.Excel
                 {
                     var title = GetTitle(row);
                     var yearsInTitle = ExcelManager.GetYears(title);
-                    var yearInColumn = ExcelManager.GetValue(
-                        row,
-                        JsonManager.GetJsonTranslation(ExcelFileColumns.Year));
+                    var yearInColumn = ExcelManager.GetYear(row);
                     if (yearsInTitle != null
                         && !string.IsNullOrEmpty(yearInColumn)
                         && !yearsInTitle.Contains(yearInColumn))

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using Logy.Entities.Localization;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
@@ -49,7 +50,6 @@ namespace Logy.Api.Mw.Excel
             IWorkbook p;
             using (var fi = File.OpenRead(_path))
             {
-//                var opcPackage = OPCPackage.Open(_path);
                 p = _isXlsx ? (IWorkbook)new XSSFWorkbook(fi) : new HSSFWorkbook(fi);
             }
             Sheet = p.GetSheetAt(0);
@@ -76,15 +76,22 @@ namespace Logy.Api.Mw.Excel
             }
         }
 
-        internal static string TrimTitle(string title)
-        {
-            return Regex.Replace(TrimDescription(title), @"(\[.*\])", string.Empty);
-        }
-
+		internal string GetYear(IRow row)
+		{
+			return GetValue(
+				row,
+				JsonManager.GetJsonTranslation(ExcelFileColumns.Year));
+		}
+                
         internal static string[] GetYears(string title)
         {
             var s = Regex.Match(title, DescDatePattern + ".*").Groups[1].Value.Replace(" ", null);
             return string.IsNullOrEmpty(s) ? null : s.Split('-', '—');
+        }
+
+        internal static string TrimTitle(string title)
+        {
+            return Regex.Replace(TrimDescription(title), @"(\[.*\])", string.Empty);
         }
 
         internal static string TrimDescription(string title)
