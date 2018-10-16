@@ -63,14 +63,20 @@
     </None>
     <None Include="Excel\EventsIndexing\Tests\out\сводная.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_1год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_2год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_3год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_4год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_5год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_1год.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_2год.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_3год.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_4год.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_5год.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Excel" />
-    <Folder Include="Excel\EventsIndexing\Tests" />
-    <Folder Include="Excel\EventsIndexing" />
-    <Folder Include="Excel\EventsIndexing\Tests\out" />
-    <Folder Include="Excel\Tests" />
+    <Folder Include="Excel\Tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
