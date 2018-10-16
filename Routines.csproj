@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="NPOI">
       <HintPath>packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
     </Reference>
@@ -46,22 +49,28 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Excel\EventsIndexing\Tests\EventtypesByYearsTests.cs" />
     <Compile Include="Excel\ExcelManager.cs" />
-    <Compile Include="Excel\Tests\EventsIndexing\T1Tests.cs" />
+    <Compile Include="Excel\EventsIndexing\EventtypesByYears.cs" />
+    <Compile Include="Excel\EventsIndexing\T1Tests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Excel\Tests\EventsIndexing\00_База_2018_10_01.xls">
+    <None Include="Excel\EventsIndexing\Tests\00_База_2018_10_01.xls">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Excel\EventsIndexing\Tests\out\сводная.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Excel" />
+    <Folder Include="Excel\EventsIndexing\Tests" />
+    <Folder Include="Excel\EventsIndexing" />
+    <Folder Include="Excel\EventsIndexing\Tests\out" />
     <Folder Include="Excel\Tests" />
-    <Folder Include="Excel\Tests\EventsIndexing" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
