@@ -49,18 +49,31 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Excel\EventsIndexing\Tests\FullDbLauncher.cs" />
+    <Compile Include="Excel\EventsIndexing\Tests\OutputType.cs" />
     <Compile Include="Excel\EventsIndexing\Tests\EventtypesByYearsTests.cs" />
+    <Compile Include="Excel\EventsIndexing\Tests\Tech10Launcher.cs" />
     <Compile Include="Excel\ExcelManager.cs" />
     <Compile Include="Excel\EventsIndexing\EventtypesByYears.cs" />
-    <Compile Include="Excel\EventsIndexing\T1Tests.cs" />
+    <Compile Include="Excel\EventsIndexing\Tests\LauncherBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Excel\EventsIndexing\Tests\00 Техфайл 10.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Excel\EventsIndexing\Tests\00_База_2018_10_01.xls">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная.csv" />
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40.csv" />
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_1год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_2год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_3год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_4год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_5год.csv" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20.csv" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20.xlsx" />

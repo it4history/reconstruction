@@ -10,3 +10,6 @@
 /.vs/reconstruction/v15
 *.user
 *.xlsx#
+*.csv#
+/Excel/EventsIndexing/Tests/outTech10/сводная.csv
+*.xls#

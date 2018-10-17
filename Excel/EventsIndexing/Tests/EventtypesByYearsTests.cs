@@ -40,14 +40,14 @@ namespace Routines.Excel.EventsIndexing.Tests
 a, 0, 1, 0, 
 b, 1, 1, 0, 
 c, 0, 1, 0, 
-", T1Tests.Output(rows, null, OutputType.Console));
+", LauncherBase.OutputConsole(rows));
 
             rows = EventtypesByYears.Do(byYears, null, 2);
             Assert.AreEqual(@"$, a, b, c, 
 a, 1, 1, 0, 
 b, 0, 0, 0, 
 c, 1, 1, 0, 
-", T1Tests.Output(rows, null, OutputType.Console));
+", LauncherBase.OutputConsole(rows));
         }
     }
 }

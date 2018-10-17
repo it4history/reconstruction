@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace Routines.Excel.EventsIndexing
 {
+    /// <summary>
+    /// externally referenced, do not move or rename
+    /// </summary>
     public static class EventtypesByYears
     {
         /// <returns>graph; rowName, columnName, count</returns>
@@ -14,7 +17,6 @@ namespace Routines.Excel.EventsIndexing
             int? yearTo = null)
         {
             var rows = new Dictionary<string, Dictionary<string, int>>();
-            int? previousYear = null;
 
             foreach (var year in byYears.Keys
                 .Where(year => (yearFrom == null || year >= yearFrom)
@@ -32,8 +34,7 @@ namespace Routines.Excel.EventsIndexing
 
                 var otherNodes = shift == 0
                     ? nodes // complete graph will be made
-                    : GetNodes(byYears, year - shift, filter);
-                    //: GetNodes(byYears, previousYear, filter);
+                    : GetNodes(byYears, year - shift, filter); //: GetNodes(byYears, previousYear, filter);
 
                 if (otherNodes != null)
                     foreach (var node in nodes)
@@ -47,8 +48,6 @@ namespace Routines.Excel.EventsIndexing
                                 cols[node2] = 1;
                         }
                     }
-
-                previousYear = year;
             }
 
             return rows;
