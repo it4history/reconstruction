@@ -62,6 +62,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Excel\EventsIndexing\Tests\out\сводная.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная20.csv" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_1год.csv" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_2год.csv" />
