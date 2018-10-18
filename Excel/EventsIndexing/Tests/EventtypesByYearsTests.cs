@@ -38,15 +38,15 @@ namespace Routines.Excel.EventsIndexing.Tests
             var rows = EventtypesByYears.Do(byYears, null, 1);
             Assert.AreEqual(@"$, a, b, c, 
 a, 0, 1, 0, 
-b, 1, 1, 0, 
-c, 0, 1, 0, 
+b, 1, 1, 1, 
+c, 0, 0, 0, 
 ", LauncherBase.OutputConsole(rows));
 
             rows = EventtypesByYears.Do(byYears, null, 2);
             Assert.AreEqual(@"$, a, b, c, 
-a, 1, 1, 0, 
-b, 0, 0, 0, 
-c, 1, 1, 0, 
+a, 1, 0, 1, 
+b, 1, 0, 1, 
+c, 0, 0, 0, 
 ", LauncherBase.OutputConsole(rows));
         }
     }

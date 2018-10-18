@@ -34,7 +34,7 @@ namespace Routines.Excel.EventsIndexing
 
                 var otherNodes = shift == 0
                     ? nodes // complete graph will be made
-                    : GetNodes(byYears, year - shift, filter); //: GetNodes(byYears, previousYear, filter);
+                    : GetNodes(byYears, year + shift, filter); //: GetNodes(byYears, previousYear, filter);
 
                 if (otherNodes != null)
                     foreach (var node in nodes)
