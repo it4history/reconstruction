@@ -17,8 +17,8 @@ namespace Routines.Excel.EventsIndexing.Tests
     {
         const string Folder = "Excel/EventsIndexing/Tests";
 
-        private const string FilterString20 = "яш кя ля пс ую щб рю бж фг фю сг цх ак цз ск фм аю ип нв";
-        private const string FilterString40 = FilterString20 + " фп ай ба не ду вы сю бв щд шы мч хе щг ти цт лх сх гя лс пь";
+        private const string FilterString20 = "яш кя ля пс ую щб рю бж фг фю сг цх ак цз ск фм аю ип нв фп";
+        private const string FilterString40 = FilterString20 + " ай ба не ду вы сю бв щд шы мч хе щг ти цт лх сх гя лс пь вз";
         private static readonly string[] Filter = FilterString40.Split(' ');
 
         /// <summary>
@@ -39,8 +39,35 @@ namespace Routines.Excel.EventsIndexing.Tests
         [Test]
         public void Do()
         {
-            var byYears = Read();
-            DoWithShift(byYears, 0);
+            var eventsMan = new ExcelManager(Path.Combine(Folder, FileNameIn));
+            eventsMan.Read();
+            DoWithShift(GroupEventsByYear(eventsMan), 0);
+
+            // Легенда sheet
+            var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
+            man.Read(1);
+            var legends = new Dictionary<string, string>();
+            foreach (HSSFRow row in man.Records)
+            {
+                var index = row.Cells[0].StringCellValue;
+                string legend;
+                var legendCell = row.Cells[3];
+                if (legendCell.CellType == CellType.Formula)
+                {
+                    var address = legendCell.ToString(); // like H476
+                    var aRow = (IRow) man.Records[int.Parse(address.Substring(1)) - 2];
+                    legend = aRow.Cells[address[0]-'A'].ToString();
+                }
+                else
+                {
+                    legend = legendCell.StringCellValue;
+                }
+                if (!string.IsNullOrEmpty(legend))
+                {
+                    legends.Add(index, legend);
+                }
+            }
+            DoWithShift(GroupEventsByYear(eventsMan, legends), 0, true);
         }
 
 
@@ -50,7 +77,9 @@ namespace Routines.Excel.EventsIndexing.Tests
         [Test]
         public void DoWithShifts()
         {
-            var byYears = Read();
+            var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
+            man.Read();
+            var byYears = GroupEventsByYear(man);
             DoWithShift(byYears, 1);
             DoWithShift(byYears, 2);
             DoWithShift(byYears, 3);
@@ -58,25 +87,22 @@ namespace Routines.Excel.EventsIndexing.Tests
             DoWithShift(byYears, 5);
         }
 
-        private void DoWithShift(Dictionary<int, string> byYears, int shift)
+        private void DoWithShift(Dictionary<int, string> byYears, int shift, bool grouping = false)
         {
             var s = shift == 0 ? null : string.Format("_сдвиг_{0}год", shift);
             var rows = EventtypesByYears.Do(byYears, null, shift);
-            Output(rows, "сводная" + s, FileOutputType);
+            Output(rows, "сводная" + (grouping ? "Группирована" : null) + s, FileOutputType);
             // Output(rows, "проценты" + s, true, null, true);
-            Output(
-                EventtypesByYears.Do(byYears, null, shift), // 822, 1852),
-                "сводная40" + s, OutputType.Csv, Filter); // suffix shows how many indices
+            if (!grouping)
+                Output(
+                    EventtypesByYears.Do(byYears, null, shift), // 822, 1852),
+                    "сводная" + Filter.Length + s, OutputType.Csv, Filter);
         }
 
-        public Dictionary<int, string> Read()
-        {
-            var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
-            man.Read();
-            return GroupEventsByYear(man);
-        }
 
-        protected virtual Dictionary<int, string> GroupEventsByYear(ExcelManager man)
+        protected virtual Dictionary<int, string> GroupEventsByYear(
+            ExcelManager man, 
+            Dictionary<string, string> legends = null)
         {
             var byYears = new Dictionary<int, string>();
             foreach (HSSFRow row in man.Records)
@@ -84,6 +110,15 @@ namespace Routines.Excel.EventsIndexing.Tests
                 var indices = man.GetValue(row, "Индекс");
                 if (!string.IsNullOrEmpty(indices))
                 {
+                    if (legends != null)
+                    {
+                        var generalIndices = new List<string>();
+                        foreach (var index in indices.Split(','))
+                        {
+                            generalIndices.Add(legends.ContainsKey(index) ? legends[index] : index);
+                        }
+                        indices = generalIndices.Aggregate((a, b) => a + ',' + b);
+                    }
                     var year = int.Parse(man.GetValue(row, "-99000"));
                     byYears[year] = (byYears.ContainsKey(year) ? byYears[year] : null) + indices + ",";
                 }

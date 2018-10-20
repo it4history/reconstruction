@@ -67,6 +67,9 @@
     <None Include="Excel\EventsIndexing\Tests\00_База_2018_10_01.xls">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Excel\EventsIndexing\Tests\00_База_2018_10_14.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Excel\EventsIndexing\Tests\outTech10\сводная.csv" />
     <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40.csv" />
     <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_1год.csv" />
@@ -82,11 +85,15 @@
     <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_3год.csv" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_4год.csv" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная20_сдвиг_5год.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная40.csv" />
+    <None Include="Excel\EventsIndexing\Tests\out\сводная_clusters3.gephi" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_1год.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_2год.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_3год.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_4год.xlsx" />
     <None Include="Excel\EventsIndexing\Tests\out\сводная_сдвиг_5год.xlsx" />
+    <None Include="Excel\EventsIndexing\Tests\out\своднаяГруппирована.gephi" />
+    <None Include="Excel\EventsIndexing\Tests\out\своднаяГруппирована.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

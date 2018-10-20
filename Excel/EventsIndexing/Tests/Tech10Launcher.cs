@@ -35,7 +35,7 @@ namespace Routines.Excel.EventsIndexing.Tests
             get { return OutputType.Csv; }
         }
 
-        protected override Dictionary<int, string> GroupEventsByYear(ExcelManager man)
+        protected override Dictionary<int, string> GroupEventsByYear(ExcelManager man, Dictionary<string, string> legends)
         {
             var byYears = new Dictionary<int, string>();
             foreach (HSSFRow row in man.Records)

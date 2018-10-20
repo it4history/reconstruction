@@ -44,14 +44,14 @@ namespace Logy.Api.Mw.Excel
             return null;
         }
 
-        public void Read()
+        public void Read(int sheet = 0)
         {
             IWorkbook p;
             using (var fi = new FileStream(_path, FileMode.Open, FileAccess.Read))
             {
                 p = _isXlsx ? (IWorkbook)new XSSFWorkbook(fi) : new HSSFWorkbook(fi);
             }
-            Sheet = p.GetSheetAt(0);
+            Sheet = p.GetSheetAt(sheet);
             var rows = Sheet.GetRowEnumerator();
 
             Records = _isXlsx ? (IList)new List<XSSFRow>() : new List<HSSFRow>();

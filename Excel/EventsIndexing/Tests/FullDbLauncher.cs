@@ -6,7 +6,7 @@ namespace Routines.Excel.EventsIndexing.Tests
     {
         public override string FileNameIn
         {
-            get { return "00_База_2018_10_01.xls"; }
+            get { return "00_База_2018_10_14.xls"; }
         }
         public override string FolderOut
         {
