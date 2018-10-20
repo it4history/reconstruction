@@ -33,6 +33,8 @@ namespace Routines.Excel.EventsIndexing.Tests
         /// </summary>
         public virtual OutputType FileOutputType { get { return OutputType.Xlsx; } }
 
+        public virtual bool ReadLegend { get { return false; } }
+
         /// <summary>
         /// как часто разные события встречаются в одном и том же году
         /// </summary>
@@ -43,31 +45,34 @@ namespace Routines.Excel.EventsIndexing.Tests
             eventsMan.Read();
             DoWithShift(GroupEventsByYear(eventsMan), 0);
 
-            // Легенда sheet
-            var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
-            man.Read(1);
-            var legends = new Dictionary<string, string>();
-            foreach (HSSFRow row in man.Records)
+            if (ReadLegend)
             {
-                var index = row.Cells[0].StringCellValue;
-                string legend;
-                var legendCell = row.Cells[3];
-                if (legendCell.CellType == CellType.Formula)
+                // Легенда sheet
+                var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
+                man.Read(1);
+                var legends = new Dictionary<string, string>();
+                foreach (HSSFRow row in man.Records)
                 {
-                    var address = legendCell.ToString(); // like H476
-                    var aRow = (IRow) man.Records[int.Parse(address.Substring(1)) - 2];
-                    legend = aRow.Cells[address[0]-'A'].ToString();
+                    var index = row.Cells[0].StringCellValue;
+                    string legend;
+                    var legendCell = row.Cells[3];
+                    if (legendCell.CellType == CellType.Formula)
+                    {
+                        var address = legendCell.ToString(); // like H476
+                        var aRow = (IRow) man.Records[int.Parse(address.Substring(1)) - 2];
+                        legend = aRow.Cells[address[0] - 'A'].ToString();
+                    }
+                    else
+                    {
+                        legend = legendCell.StringCellValue;
+                    }
+                    if (!string.IsNullOrEmpty(legend))
+                    {
+                        legends.Add(index, legend);
+                    }
                 }
-                else
-                {
-                    legend = legendCell.StringCellValue;
-                }
-                if (!string.IsNullOrEmpty(legend))
-                {
-                    legends.Add(index, legend);
-                }
+                DoWithShift(GroupEventsByYear(eventsMan, legends), 0, true);
             }
-            DoWithShift(GroupEventsByYear(eventsMan, legends), 0, true);
         }
 
 

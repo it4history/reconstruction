@@ -12,6 +12,11 @@ namespace Routines.Excel.EventsIndexing.Tests
         {
             get { return "out"; }
         }
+
+        public override bool ReadLegend
+        {
+            get { return true; }
+        }
     }
 }
 #endif
