@@ -68,7 +68,7 @@ namespace Routines.Excel.EventsIndexing.Tests
                     }
                     if (!string.IsNullOrEmpty(legend))
                     {
-                        legends.Add(index, legend);
+                        legends.Add(index, legend.ToLower());
                     }
                 }
                 DoWithShift(GroupEventsByYear(eventsMan, legends), 0, true);
