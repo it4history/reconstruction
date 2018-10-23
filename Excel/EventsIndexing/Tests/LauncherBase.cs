@@ -22,6 +22,11 @@ namespace Routines.Excel.EventsIndexing.Tests
         private static readonly string[] Filter = FilterString40.Split(' ');
 
         /// <summary>
+        /// for column Индекс
+        /// </summary>
+        public const char IndicesSeparator = ',';
+
+        /// <summary>
         /// XLS format is faster for reading
         /// </summary>
         public abstract string FileNameIn { get; }
@@ -44,6 +49,7 @@ namespace Routines.Excel.EventsIndexing.Tests
             var eventsMan = new ExcelManager(Path.Combine(Folder, FileNameIn));
             eventsMan.Read();
             DoWithShift(GroupEventsByYear(eventsMan), 0);
+            DoWithShift(GroupEventsByYear(eventsMan, null, true), 0);
 
             if (ReadLegend)
             {
@@ -71,7 +77,8 @@ namespace Routines.Excel.EventsIndexing.Tests
                         legends.Add(index, legend.ToLower());
                     }
                 }
-                DoWithShift(GroupEventsByYear(eventsMan, legends), 0, true);
+                DoWithShift(GroupEventsByYear(eventsMan, legends), 0);
+                DoWithShift(GroupEventsByYear(eventsMan, legends, true), 0);
             }
         }
 
@@ -92,43 +99,51 @@ namespace Routines.Excel.EventsIndexing.Tests
             DoWithShift(byYears, 5);
         }
 
-        private void DoWithShift(Dictionary<int, string> byYears, int shift, bool grouping = false)
+        private void DoWithShift(Graphes byYears, int shift)
         {
             var s = shift == 0 ? null : string.Format("_сдвиг_{0}год", shift);
-            var rows = EventtypesByYears.Do(byYears, null, shift);
-            Output(rows, "сводная" + (grouping ? "Группирована" : null) + s, FileOutputType);
+            var rows = EventtypesByYears.Do(byYears.ByYears, shift);
+            Output(
+                rows,
+                string.Format("сводная{0}{1}{2}",
+                    byYears.TwoAndMoreEventtypes ? "_filter2_" : null,
+                    byYears.Legends != null ? "Группирована" : null,
+                    s),
+                FileOutputType);
             // Output(rows, "проценты" + s, true, null, true);
-            if (!grouping)
+            if (!byYears.TwoAndMoreEventtypes && byYears.Legends == null)
                 Output(
-                    EventtypesByYears.Do(byYears, null, shift), // 822, 1852),
+                    EventtypesByYears.Do(byYears.ByYears, shift), // 822, 1852),
                     "сводная" + Filter.Length + s, OutputType.Csv, Filter);
         }
 
-
-        protected virtual Dictionary<int, string> GroupEventsByYear(
+        protected virtual Graphes GroupEventsByYear(
             ExcelManager man, 
-            Dictionary<string, string> legends = null)
+            Dictionary<string, string> legends = null,
+            bool twoAndMoreEventtypes = false)
         {
-            var byYears = new Dictionary<int, string>();
+            var result = new Graphes(legends, twoAndMoreEventtypes);
             foreach (HSSFRow row in man.Records)
             {
                 var indices = man.GetValue(row, "Индекс");
-                if (!string.IsNullOrEmpty(indices))
+                if (!string.IsNullOrEmpty(indices)
+                    && (!twoAndMoreEventtypes
+                        || indices.Split(IndicesSeparator).Count(i => !string.IsNullOrEmpty(i)) >= 2))
                 {
                     if (legends != null)
                     {
-                        var generalIndices = new List<string>();
-                        foreach (var index in indices.Split(','))
+                        var indicesFromLegend = new List<string>();
+                        foreach (var index in indices.Split(IndicesSeparator))
                         {
-                            generalIndices.Add(legends.ContainsKey(index) ? legends[index] : index);
+                            indicesFromLegend.Add(legends.ContainsKey(index) ? legends[index] : index);
                         }
-                        indices = generalIndices.Aggregate((a, b) => a + ',' + b);
+                        indices = indicesFromLegend.Aggregate((a, b) => a + IndicesSeparator + b);
                     }
-                    var year = int.Parse(man.GetValue(row, "-99000"));
-                    byYears[year] = (byYears.ContainsKey(year) ? byYears[year] : null) + indices + ",";
+                    var eventOrYear = twoAndMoreEventtypes ? row.RowNum : int.Parse(man.GetValue(row, "-99000"));
+                    result.Add(eventOrYear, indices);
                 }
             }
-            return byYears;
+            return result;
         }
 
         public static string OutputConsole(Dictionary<string, Dictionary<string, int>> rows)
@@ -146,7 +161,7 @@ namespace Routines.Excel.EventsIndexing.Tests
                 .Where(s => rows[s].Count > 0 || !ColumnIsEmpty(rows, s))
                 .OrderBy(s => s).ToArray();
 
-            Console.WriteLine("graph has {0} nodes", sorted.Count());
+            Console.WriteLine("graph {1} has {0} nodes", sorted.Count(), name);
 
             var folder = string.Format("../../{0}/{1}", Folder, FolderOut);
             var path = Path.Combine(folder, name + "." + type.ToString().ToLower());

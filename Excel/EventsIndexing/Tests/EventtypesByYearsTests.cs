@@ -35,14 +35,14 @@ namespace Routines.Excel.EventsIndexing.Tests
                 { 2, "b" },
                 { 3, "c,a" }
             };
-            var rows = EventtypesByYears.Do(byYears, null, 1);
+            var rows = EventtypesByYears.Do(byYears, 1);
             Assert.AreEqual(@"$, a, b, c, 
 a, 0, 1, 0, 
 b, 1, 1, 1, 
 c, 0, 0, 0, 
 ", LauncherBase.OutputConsole(rows));
 
-            rows = EventtypesByYears.Do(byYears, null, 2);
+            rows = EventtypesByYears.Do(byYears, 2);
             Assert.AreEqual(@"$, a, b, c, 
 a, 1, 0, 1, 
 b, 1, 0, 1, 

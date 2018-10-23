@@ -35,9 +35,9 @@ namespace Routines.Excel.EventsIndexing.Tests
             get { return OutputType.Csv; }
         }
 
-        protected override Dictionary<int, string> GroupEventsByYear(ExcelManager man, Dictionary<string, string> legends)
+        protected override Graphes GroupEventsByYear(ExcelManager man, Dictionary<string, string> legends = null, bool twoAndMoreEventtypes = false)
         {
-            var byYears = new Dictionary<int, string>();
+            var result = new Graphes(legends, twoAndMoreEventtypes);
             foreach (HSSFRow row in man.Records)
             {
                 for (int colGroup = 0; colGroup < 12; colGroup++)
@@ -58,11 +58,11 @@ namespace Routines.Excel.EventsIndexing.Tests
                     {
                         var year = (int) row.Cells[i].NumericCellValue;
                         var index = row.Cells[i + 1].ToString();
-                        byYears[year] = (byYears.ContainsKey(year) ? byYears[year] : null) + index + ",";
+                        result.Add(year, index);
                     }
                 }
             }
-            return byYears;
+            return result;
         }
     }
 }

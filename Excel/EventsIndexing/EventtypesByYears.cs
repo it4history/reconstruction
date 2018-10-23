@@ -11,7 +11,7 @@ namespace Routines.Excel.EventsIndexing
         /// <returns>graph; rowName, columnName, count</returns>
         public static Dictionary<string, Dictionary<string, int>> Do(
             Dictionary<int, string> byYears,
-            string[] filter = null,
+            // string[] filter = null, filtering make sense only during output
             int shift = 0,
             int? yearFrom = null,
             int? yearTo = null)
@@ -23,7 +23,7 @@ namespace Routines.Excel.EventsIndexing
                                && (yearTo == null || year <= yearTo))
                 .OrderBy(year => year))
             {
-                var nodes = GetNodes(byYears, year, filter);
+                var nodes = GetNodes(byYears, year);
                 foreach (var node in nodes) // should be not null 
                 {
                     if (!rows.ContainsKey(node))
@@ -34,7 +34,7 @@ namespace Routines.Excel.EventsIndexing
 
                 var otherNodes = shift == 0
                     ? nodes // complete graph will be made
-                    : GetNodes(byYears, year + shift, filter); //: GetNodes(byYears, previousYear, filter);
+                    : GetNodes(byYears, year + shift); //: GetNodes(byYears, previousYear, filter);
 
                 if (otherNodes != null)
                     foreach (var node in nodes)
@@ -53,7 +53,7 @@ namespace Routines.Excel.EventsIndexing
             return rows;
         }
 
-        private static IEnumerable<string> GetNodes(Dictionary<int, string> byYears, int? year, string[] filter)
+        private static IEnumerable<string> GetNodes(Dictionary<int, string> byYears, int? year, string[] filter = null)
         {
             if (year == null || !byYears.ContainsKey(year.Value))
                 return null;
