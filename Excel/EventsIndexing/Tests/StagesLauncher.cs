@@ -8,6 +8,12 @@ using NUnit.Framework;
 
 namespace Routines.Excel.EventsIndexing.Tests
 {
+    /// <summary>
+    /// externally referenced, do not move or rename
+    /// http://hist.tk/hw/Поиск_этапов_развития_цивилизации
+    /// -5000	-2000	-1000	0	500	1000	1500	1800	1850	1900	1950
+    /// 3000  2500  1700  1000  700 400 200 150 120 100
+    /// </summary>
     public class StagesLauncher : FullDbLauncher
     {
         public override string FolderOut
@@ -15,11 +21,6 @@ namespace Routines.Excel.EventsIndexing.Tests
             get { return "outStages"; }
         }
 
-        /// <summary>
-        /// http://hist.tk/hw/Поиск_этапов_развития_цивилизации
-        /// -5000	-2000	-1000	0	500	1000	1500	1800	1850	1900	1950
-        /// 3000  2500  1700  1000  700 400 200 150 120 100
-        /// </summary>
         [Test]
         public void DoForGephi()
         {
