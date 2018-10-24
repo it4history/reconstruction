@@ -1,4 +1,4 @@
-#if DEBUG
+п»ї#if DEBUG
 
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ namespace Routines.Excel.EventsIndexing.Tests
 {
     /// <summary>
     /// externally referenced, do not move or rename
-    /// http://hist.tk/hw/Поиск_этапов_развития_цивилизации
+    /// http://hist.tk/hw/РџРѕРёСЃРє_СЌС‚Р°РїРѕРІ_СЂР°Р·РІРёС‚РёСЏ_С†РёРІРёР»РёР·Р°С†РёРё
     /// -5000	-2000	-1000	0	500	1000	1500	1800	1850	1900	1950
     /// 3000  2500  1700  1000  700 400 200 150 120 100
     /// </summary>
@@ -25,11 +25,11 @@ namespace Routines.Excel.EventsIndexing.Tests
         public void DoForGephi()
         {
             var eventsMan = new ExcelManager(Path.Combine(Folder, FileNameIn));
-            var man = new ExcelManager(eventsMan, 1); // Легенда sheet
-            var legends = GetLegend(man, "Подгруппа"); //"Поисковые слова");
+            var man = new ExcelManager(eventsMan, 1); // Р›РµРіРµРЅРґР° sheet
+            var legends = GetLegend(man, "РџРѕРґРіСЂСѓРїРїР°"); //"РџРѕРёСЃРєРѕРІС‹Рµ СЃР»РѕРІР°");
             var byYears = GroupEventsByYear(eventsMan, legends);
 
-            var exceptions = new List<string> { "примечания" };
+            var exceptions = new List<string> { "РїСЂРёРјРµС‡Р°РЅРёСЏ" };
             var sb = new StringBuilder();
             sb.AppendLine("Source,Target,Timeset");//",Weight,Type");
             foreach (var year in byYears.GetYears())
@@ -52,7 +52,7 @@ namespace Routines.Excel.EventsIndexing.Tests
                         }
                 }
             }
-            File.WriteAllText(GetOutputPath("поПодгруппам", OutputType.Csv), sb.ToString());
+            File.WriteAllText(GetOutputPath("РїРѕРџРѕРґРіСЂСѓРїРїР°Рј", OutputType.Csv), sb.ToString());
         }
     }
 }
