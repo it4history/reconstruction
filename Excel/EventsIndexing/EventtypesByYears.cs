@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
+using Routines.Excel.EventsIndexing.Tests;
 
 namespace Routines.Excel.EventsIndexing
 {
@@ -10,7 +10,7 @@ namespace Routines.Excel.EventsIndexing
     {
         /// <returns>graph; rowName, columnName, count</returns>
         public static Dictionary<string, Dictionary<string, int>> Do(
-            Dictionary<int, string> byYears,
+            Graphes byYears,
             // string[] filter = null, filtering make sense only during output
             int shift = 0,
             int? yearFrom = null,
@@ -18,12 +18,9 @@ namespace Routines.Excel.EventsIndexing
         {
             var rows = new Dictionary<string, Dictionary<string, int>>();
 
-            foreach (var year in byYears.Keys
-                .Where(year => (yearFrom == null || year >= yearFrom)
-                               && (yearTo == null || year <= yearTo))
-                .OrderBy(year => year))
+            foreach (var year in byYears.GetYears(yearFrom, yearTo))
             {
-                var nodes = GetNodes(byYears, year);
+                var nodes = byYears.GetNodes(year);
                 foreach (var node in nodes) // should be not null 
                 {
                     if (!rows.ContainsKey(node))
@@ -34,7 +31,7 @@ namespace Routines.Excel.EventsIndexing
 
                 var otherNodes = shift == 0
                     ? nodes // complete graph will be made
-                    : GetNodes(byYears, year + shift); //: GetNodes(byYears, previousYear, filter);
+                    : byYears.GetNodes(year + shift); //: byYears.GetNodes(previousYear, filter);
 
                 if (otherNodes != null)
                     foreach (var node in nodes)
@@ -51,16 +48,6 @@ namespace Routines.Excel.EventsIndexing
             }
 
             return rows;
-        }
-
-        private static IEnumerable<string> GetNodes(Dictionary<int, string> byYears, int? year, string[] filter = null)
-        {
-            if (year == null || !byYears.ContainsKey(year.Value))
-                return null;
-            return byYears[year.Value].Split(',').ToList()
-                .Distinct()
-                .Where(node => !string.IsNullOrEmpty(node)
-                               && (filter == null || filter.Contains(node)));
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Routines.Excel.EventsIndexing.Tests
 {
     public abstract class LauncherBase
     {
-        const string Folder = "Excel/EventsIndexing/Tests";
+        protected const string Folder = "Excel/EventsIndexing/Tests";
 
         private const string FilterString20 = "яш кя ля пс ую щб рю бж фг фю сг цх ак цз ск фм аю ип нв фп";
         private const string FilterString40 = FilterString20 + " ай ба не ду вы сю бв щд шы мч хе щг ти цт лх сх гя лс пь вз";
@@ -40,6 +40,7 @@ namespace Routines.Excel.EventsIndexing.Tests
 
         public virtual bool ReadLegend { get { return false; } }
 
+#region http://hist.tk/hw/EventsIndexing
         /// <summary>
         /// как часто разные события встречаются в одном и том же году
         /// </summary>
@@ -47,39 +48,31 @@ namespace Routines.Excel.EventsIndexing.Tests
         public void Do()
         {
             var eventsMan = new ExcelManager(Path.Combine(Folder, FileNameIn));
-            eventsMan.Read();
             DoWithShift(GroupEventsByYear(eventsMan), 0);
             DoWithShift(GroupEventsByYear(eventsMan, null, true), 0);
 
             if (ReadLegend)
             {
-                // Легенда sheet
-                var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
-                man.Read(1);
-                var legends = new Dictionary<string, string>();
-                foreach (HSSFRow row in man.Records)
-                {
-                    var index = row.Cells[0].StringCellValue;
-                    string legend;
-                    var legendCell = row.Cells[3];
-                    if (legendCell.CellType == CellType.Formula)
-                    {
-                        var address = legendCell.ToString(); // like H476
-                        var aRow = (IRow) man.Records[int.Parse(address.Substring(1)) - 2];
-                        legend = aRow.Cells[address[0] - 'A'].ToString();
-                    }
-                    else
-                    {
-                        legend = legendCell.StringCellValue;
-                    }
-                    if (!string.IsNullOrEmpty(legend))
-                    {
-                        legends.Add(index, legend.ToLower());
-                    }
-                }
+                var man = new ExcelManager(eventsMan, 1); // Легенда sheet
+                var legends = GetLegend(man, "Подгруппа");
                 DoWithShift(GroupEventsByYear(eventsMan, legends), 0);
                 DoWithShift(GroupEventsByYear(eventsMan, legends, true), 0);
             }
+        }
+
+        protected static Dictionary<string, string> GetLegend(ExcelManager man, string groupColumn)
+        {
+            var legends = new Dictionary<string, string>();
+            foreach (HSSFRow row in man.Records)
+            {
+                var index = row.Cells[0].StringCellValue;
+                var legend = man.GetValue(row, groupColumn);
+                if (!string.IsNullOrEmpty(legend))
+                {
+                    legends.Add(index, legend.ToLower());
+                }
+            }
+            return legends;
         }
 
 
@@ -90,7 +83,6 @@ namespace Routines.Excel.EventsIndexing.Tests
         public void DoWithShifts()
         {
             var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
-            man.Read();
             var byYears = GroupEventsByYear(man);
             DoWithShift(byYears, 1);
             DoWithShift(byYears, 2);
@@ -102,7 +94,7 @@ namespace Routines.Excel.EventsIndexing.Tests
         private void DoWithShift(Graphes byYears, int shift)
         {
             var s = shift == 0 ? null : string.Format("_сдвиг_{0}год", shift);
-            var rows = EventtypesByYears.Do(byYears.ByYears, shift);
+            var rows = EventtypesByYears.Do(byYears, shift);
             Output(
                 rows,
                 string.Format("сводная{0}{1}{2}",
@@ -113,9 +105,10 @@ namespace Routines.Excel.EventsIndexing.Tests
             // Output(rows, "проценты" + s, true, null, true);
             if (!byYears.TwoAndMoreEventtypes && byYears.Legends == null)
                 Output(
-                    EventtypesByYears.Do(byYears.ByYears, shift), // 822, 1852),
+                    EventtypesByYears.Do(byYears, shift), // 822, 1852),
                     "сводная" + Filter.Length + s, OutputType.Csv, Filter);
         }
+        #endregion
 
         protected virtual Graphes GroupEventsByYear(
             ExcelManager man, 
@@ -163,10 +156,7 @@ namespace Routines.Excel.EventsIndexing.Tests
 
             Console.WriteLine("graph {1} has {0} nodes", sorted.Count(), name);
 
-            var folder = string.Format("../../{0}/{1}", Folder, FolderOut);
-            var path = Path.Combine(folder, name + "." + type.ToString().ToLower());
-            if (!Directory.Exists(folder))
-                Directory.CreateDirectory(folder);
+            var path = GetOutputPath(name, type);
             if (type == OutputType.Xlsx)
             {
                 using (var stream = new FileStream(path, FileMode.Create, FileAccess.Write))
@@ -239,6 +229,14 @@ namespace Routines.Excel.EventsIndexing.Tests
                 }
             }
             return null;
+        }
+
+        protected string GetOutputPath(string name, OutputType type)
+        {
+            var folder = string.Format("../../{0}/{1}", Folder, FolderOut);
+            if (!Directory.Exists(folder))
+                Directory.CreateDirectory(folder);
+            return Path.Combine(folder, name + "." + type.ToString().ToLower());
         }
 
         private static bool ColumnIsEmpty(Dictionary<string, Dictionary<string, int>> rows, string column)

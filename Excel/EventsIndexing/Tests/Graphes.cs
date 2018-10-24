@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Routines.Excel.EventsIndexing.Tests
 {
@@ -12,6 +13,11 @@ namespace Routines.Excel.EventsIndexing.Tests
         {
             _legends = legends;
             _twoAndMoreEventtypes = twoAndMoreEventtypes;
+        }
+
+        internal Graphes(Dictionary<int, string> byYears)
+        {
+            ByYears = byYears;
         }
 
         public bool TwoAndMoreEventtypes
@@ -28,6 +34,24 @@ namespace Routines.Excel.EventsIndexing.Tests
         {
             ByYears[year] = (ByYears.ContainsKey(year) ? ByYears[year] : null) 
                 + indices + LauncherBase.IndicesSeparator;
+        }
+
+        public IOrderedEnumerable<int> GetYears(int? yearFrom = null, int? yearTo = null)
+        {
+            return ByYears.Keys
+                .Where(year => (yearFrom == null || year >= yearFrom)
+                               && (yearTo == null || year <= yearTo))
+                .OrderBy(year => year);
+        }
+
+        public IEnumerable<string> GetNodes(int? year, string[] filter = null)
+        {
+            if (year == null || !ByYears.ContainsKey(year.Value))
+                return null;
+            return ByYears[year.Value].Split(',').ToList()
+                .Distinct()
+                .Where(node => !string.IsNullOrEmpty(node)
+                               && (filter == null || filter.Contains(node)));
         }
     }
 }

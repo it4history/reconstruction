@@ -12,23 +12,45 @@ namespace Logy.Api.Mw.Excel
     {
         private const string DescDatePattern = @"^(\d{2,4}(\s*[-—]\s*\d+)?)";
         private readonly string _path;
-        private readonly bool _isXlsx;
+
+        private bool IsXlsx
+        {
+            get { return _path.EndsWith("xlsx"); }
+        }
 
         public ExcelManager(string path)
         {
             _path = path;
-            _isXlsx = path.EndsWith("xlsx");
+            Read();
+        }
+
+        public ExcelManager(ExcelManager man, int sheet)
+        {
+            _path = man._path;
+            _workbook = man._workbook;
+            Read(sheet);
         }
 
         public IList Records { get; set; }
         public int RecordsCount { get { return Sheet.PhysicalNumberOfRows - 1; } }
         public List<string> Columns { get; set; }
         internal ISheet Sheet { get; set; }
+        private IWorkbook _workbook;
 
         public string GetValue(IRow row, string column)
         {
             var cell = GetCell(row, column);
-            return (cell != null) ? cell.ToString() : null;
+            if (cell != null)
+            {
+                if (cell.CellType == CellType.Formula)
+                {
+                    var address = cell.ToString(); // like H476
+                    var aRow = (IRow) Records[int.Parse(address.Substring(1)) - 2];
+                    return aRow.Cells[address[0] - 'A'].ToString();
+                }
+                return cell.ToString();
+            }
+            return null;
         }
 
         public ICell GetCell(IRow row, string column)
@@ -44,22 +66,22 @@ namespace Logy.Api.Mw.Excel
             return null;
         }
 
-        public void Read(int sheet = 0)
+        private void Read(int sheet = 0)
         {
-            IWorkbook p;
-            using (var fi = new FileStream(_path, FileMode.Open, FileAccess.Read))
-            {
-                p = _isXlsx ? (IWorkbook)new XSSFWorkbook(fi) : new HSSFWorkbook(fi);
-            }
-            Sheet = p.GetSheetAt(sheet);
+            if (_workbook == null)
+                using (var fi = new FileStream(_path, FileMode.Open, FileAccess.Read))
+                {
+                    _workbook = IsXlsx ? (IWorkbook) new XSSFWorkbook(fi) : new HSSFWorkbook(fi);
+                }
+            Sheet = _workbook.GetSheetAt(sheet);
             var rows = Sheet.GetRowEnumerator();
 
-            Records = _isXlsx ? (IList)new List<XSSFRow>() : new List<HSSFRow>();
+            Records = IsXlsx ? (IList) new List<XSSFRow>() : new List<HSSFRow>();
             Columns = new List<string>();
             var firstRow = true;
             while (rows.MoveNext())
             {
-                var row = (IRow)rows.Current;
+                var row = (IRow) rows.Current;
                 if (firstRow)
                 {
                     foreach (var cell in row.Cells)

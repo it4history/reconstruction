@@ -49,7 +49,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Excel\EventsIndexing\Tests\BasingEventsLauncher.cs" />
+    <Compile Include="Excel\EventsIndexing\Tests\StagesLauncher.cs" />
     <Compile Include="Excel\EventsIndexing\Tests\FullDbLauncher.cs" />
     <Compile Include="Excel\EventsIndexing\Tests\Graphes.cs" />
     <Compile Include="Excel\EventsIndexing\Tests\OutputType.cs" />
@@ -69,6 +69,7 @@
     <None Include="Excel\EventsIndexing\Tests\00_База_2018_10_14.xls">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Excel\EventsIndexing\Tests\outStages\поПодгруппам.csv" />
     <None Include="Excel\EventsIndexing\Tests\outTech10\сводная.csv" />
     <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40.csv" />
     <None Include="Excel\EventsIndexing\Tests\outTech10\сводная40_сдвиг_1год.csv" />
