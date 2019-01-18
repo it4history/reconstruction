@@ -10,6 +10,7 @@ using Logy.Entities.Localization;
 using Logy.Entities.Model;
 using Logy.MwAgent.DotNetWikiBot;
 using NPOI.HSSF.UserModel;
+using NPOI.SS.UserModel;
 
 namespace Logy.Api.Mw.Excel
 {
@@ -157,12 +158,12 @@ namespace Logy.Api.Mw.Excel
                 descriptionColumn);
             return ExcelManager.TrimTitle(titleValue);
         }
-        
-		internal string GetYear(IRow row)
-		{
-			return ExcelManager.GetValue(
-				row,
-				JsonManager.GetJsonTranslation(ExcelFileColumns.Year));
-		}
+
+        internal string GetYear(IRow row)
+        {
+            return ExcelManager.GetValue(
+              row,
+              JsonManager.GetJsonTranslation(ExcelFileColumns.Year));
+        }
     }
 }

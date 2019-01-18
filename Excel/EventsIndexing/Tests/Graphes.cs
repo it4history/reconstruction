@@ -5,9 +5,9 @@ namespace Routines.Excel.EventsIndexing.Tests
 {
     public class Graphes
     {
+        public readonly Dictionary<int, string> ByYears = new Dictionary<int, string>();
         private readonly Dictionary<string, string> _legends;
         private readonly bool _twoAndMoreEventtypes;
-        public readonly Dictionary<int, string> ByYears = new Dictionary<int, string>();
 
         public Graphes(Dictionary<string, string> legends, bool twoAndMoreEventtypes)
         {
@@ -15,9 +15,9 @@ namespace Routines.Excel.EventsIndexing.Tests
             _twoAndMoreEventtypes = twoAndMoreEventtypes;
         }
 
-        internal Graphes(Dictionary<int, string> byYears)
+        internal Graphes(Dictionary<int, string> graphByYears)
         {
-            ByYears = byYears;
+            ByYears = graphByYears;
         }
 
         public bool TwoAndMoreEventtypes

@@ -10,18 +10,20 @@ namespace Routines.Excel.EventsIndexing
     {
         /// <returns>graph; rowName, columnName, count</returns>
         public static Dictionary<string, Dictionary<string, int>> Do(
-            Graphes byYears,
-            // string[] filter = null, filtering make sense only during output
+            Graphes graphByYears,
+            /* string[] filter = null, filtering make sense only during output */
             int shift = 0,
             int? yearFrom = null,
             int? yearTo = null)
         {
             var rows = new Dictionary<string, Dictionary<string, int>>();
 
-            foreach (var year in byYears.GetYears(yearFrom, yearTo))
+            foreach (var year in graphByYears.GetYears(yearFrom, yearTo))
             {
-                var nodes = byYears.GetNodes(year);
-                foreach (var node in nodes) // should be not null 
+                var nodes = graphByYears.GetNodes(year);
+                
+                // nodes should be not null 
+                foreach (var node in nodes) 
                 {
                     if (!rows.ContainsKey(node))
                     {
@@ -30,8 +32,8 @@ namespace Routines.Excel.EventsIndexing
                 }
 
                 var otherNodes = shift == 0
-                    ? nodes // complete graph will be made
-                    : byYears.GetNodes(year + shift); //: byYears.GetNodes(previousYear, filter);
+                    ? nodes /// complete graph will be made
+                    : graphByYears.GetNodes(year + shift); ///: graphByYears.GetNodes(previousYear, filter);
 
                 if (otherNodes != null)
                     foreach (var node in nodes)

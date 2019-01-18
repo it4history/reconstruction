@@ -1,37 +1,29 @@
 ﻿#if DEBUG
 
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using Logy.Api.Mw.Excel;
 using NPOI.HSSF.UserModel;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
 using NUnit.Framework;
 
 namespace Routines.Excel.EventsIndexing.Tests
 {
-    public abstract class LauncherBase
+    public abstract class LauncherBase : Outputer
     {
-        protected const string Folder = "Excel/EventsIndexing/Tests";
-
-        private const string FilterString20 = "яш кя ля пс ую щб рю бж фг фю сг цх ак цз ск фм аю ип нв фп";
-        private const string FilterString40 = FilterString20 + " ай ба не ду вы сю бв щд шы мч хе щг ти цт лх сх гя лс пь вз";
-        private static readonly string[] Filter = FilterString40.Split(' ');
-
         /// <summary>
         /// for column Индекс
         /// </summary>
         public const char IndicesSeparator = ',';
 
+        private const string FilterString20 = "яш кя ля пс ую щб рю бж фг фю сг цх ак цз ск фм аю ип нв фп";
+        private const string FilterString40 = FilterString20 + " ай ба не ду вы сю бв щд шы мч хе щг ти цт лх сх гя лс пь вз";
+        private static readonly string[] Filter = FilterString40.Split(' ');
+        
         /// <summary>
         /// XLS format is faster for reading
         /// </summary>
         public abstract string FileNameIn { get; }
-
-        public abstract string FolderOut { get; }
 
         /// <summary>
         /// big files are slow in Xlsx for writing
@@ -60,6 +52,21 @@ namespace Routines.Excel.EventsIndexing.Tests
             }
         }
 
+        /// <summary>
+        /// совпадения со сдвигом в 1-5 год
+        /// </summary>
+        [Test]
+        public void DoWithShifts()
+        {
+            var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
+            var graphByYears = GroupEventsByYear(man);
+            DoWithShift(graphByYears, 1);
+            DoWithShift(graphByYears, 2);
+            DoWithShift(graphByYears, 3);
+            DoWithShift(graphByYears, 4);
+            DoWithShift(graphByYears, 5);
+        }
+
         protected static Dictionary<string, string> GetLegend(ExcelManager man, string groupColumn)
         {
             var legends = new Dictionary<string, string>();
@@ -75,38 +82,27 @@ namespace Routines.Excel.EventsIndexing.Tests
             return legends;
         }
 
-
-        /// <summary>
-        /// совпадения со сдвигом в 1-5 год
-        /// </summary>
-        [Test]
-        public void DoWithShifts()
-        {
-            var man = new ExcelManager(Path.Combine(Folder, FileNameIn));
-            var byYears = GroupEventsByYear(man);
-            DoWithShift(byYears, 1);
-            DoWithShift(byYears, 2);
-            DoWithShift(byYears, 3);
-            DoWithShift(byYears, 4);
-            DoWithShift(byYears, 5);
-        }
-
-        private void DoWithShift(Graphes byYears, int shift)
+        protected /*private*/ void DoWithShift(Graphes graphByYears, int shift)
         {
             var s = shift == 0 ? null : string.Format("_сдвиг_{0}год", shift);
-            var rows = EventtypesByYears.Do(byYears, shift);
+            var rows = EventtypesByYears.Do(graphByYears, shift);
+            var subname = string.Format(
+                "сводная{0}{1}{2}",
+                graphByYears.TwoAndMoreEventtypes ? "_filter2_" : null,
+                graphByYears.Legends != null ? "Группирована" : null,
+                s);
             Output(
                 rows,
-                string.Format("сводная{0}{1}{2}",
-                    byYears.TwoAndMoreEventtypes ? "_filter2_" : null,
-                    byYears.Legends != null ? "Группирована" : null,
-                    s),
+                subname,
                 FileOutputType);
+
             // Output(rows, "проценты" + s, true, null, true);
-            if (!byYears.TwoAndMoreEventtypes && byYears.Legends == null)
+            if (!graphByYears.TwoAndMoreEventtypes && graphByYears.Legends == null)
                 Output(
-                    EventtypesByYears.Do(byYears, shift), // 822, 1852),
-                    "сводная" + Filter.Length + s, OutputType.Csv, Filter);
+                    EventtypesByYears.Do(graphByYears, shift), // 822, 1852),
+                    "сводная" + Filter.Length + s, 
+                    OutputType.Csv, 
+                    Filter);
         }
         #endregion
 
@@ -137,119 +133,6 @@ namespace Routines.Excel.EventsIndexing.Tests
                 }
             }
             return result;
-        }
-
-        public static string OutputConsole(Dictionary<string, Dictionary<string, int>> rows)
-        {
-            return new FullDbLauncher().Output(rows, null, OutputType.Console);
-        }
-
-        public string Output(Dictionary<string, Dictionary<string, int>> rows,
-                           string name,
-                           OutputType type = OutputType.Xlsx,
-                           string[] outOrder = null,
-                           bool percents = false)
-        {
-            var sorted = outOrder ?? (IEnumerable<string>)rows.Keys
-                .Where(s => rows[s].Count > 0 || !ColumnIsEmpty(rows, s))
-                .OrderBy(s => s).ToArray();
-
-            Console.WriteLine("graph {1} has {0} nodes", sorted.Count(), name);
-
-            var path = GetOutputPath(name, type);
-            if (type == OutputType.Xlsx)
-            {
-                using (var stream = new FileStream(path, FileMode.Create, FileAccess.Write))
-                {
-                    var wb = new XSSFWorkbook();
-                    var sheet = wb.CreateSheet(name);
-
-                    var erowN = 0;
-                    var ecellN = 0;
-                    var erow = sheet.CreateRow(erowN++);
-                    var cell = erow.CreateCell(ecellN++);
-                    cell.SetCellValue("");
-                    foreach (var col in sorted)
-                    {
-                        cell = erow.CreateCell(ecellN++);
-                        cell.SetCellValue(col);
-                    }
-
-                    var diagonalStyle = wb.CreateCellStyle();
-                    diagonalStyle.FillBackgroundColor = IndexedColors.Yellow.Index;
-                    diagonalStyle.FillPattern = FillPattern.LeastDots;
-                    foreach (var row in sorted)
-                    {
-                        erow = sheet.CreateRow(erowN++);
-                        ecellN = 0;
-                        cell = erow.CreateCell(ecellN++);
-                        cell.SetCellValue(row);
-
-                        var cols = rows[row];
-                        foreach (var col in sorted)
-                        {
-                            cell = erow.CreateCell(ecellN++);
-                            cell.SetCellValue(cols.ContainsKey(col) ? cols[col] : 0);
-                            if (row == col)
-                                cell.CellStyle = diagonalStyle;
-                        }
-                    }
-                    wb.Write(stream);
-                    stream.Close();
-                }
-            }
-            else
-            {
-                var sb = new StringBuilder();
-                sb.Append("$, ");
-                foreach (var col in sorted)
-                {
-                    sb.Append(col + ", ");
-                }
-                sb.AppendLine();
-                foreach (var row in sorted)
-                {
-                    sb.Append(row + ", ");
-                    var cols = rows[row];
-                    foreach (var col in sorted)
-                    {
-                        sb.Append(cols.ContainsKey(col) ? cols[col] : 0);
-                        sb.Append(", ");
-                    }
-                    sb.AppendLine();
-                }
-                if (type == OutputType.Csv)
-                {
-                    File.WriteAllText(path, sb.ToString());
-                }
-                else
-                {
-                    // OutOfMemoryException for graph with 7000 nodes
-                    return sb.ToString();
-                }
-            }
-            return null;
-        }
-
-        protected string GetOutputPath(string name, OutputType type)
-        {
-            var folder = string.Format("../../{0}/{1}", Folder, FolderOut);
-            if (!Directory.Exists(folder))
-                Directory.CreateDirectory(folder);
-            return Path.Combine(folder, name + "." + type.ToString().ToLower());
-        }
-
-        private static bool ColumnIsEmpty(Dictionary<string, Dictionary<string, int>> rows, string column)
-        {
-            foreach (var pair in rows.Values)
-            {
-                // pair does not contain 0 counts
-                if (pair.ContainsKey(column))
-                {
-                    return false;
-                }
-            }
-            return true;
         }
     }
 }
