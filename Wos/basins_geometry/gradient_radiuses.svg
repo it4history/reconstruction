@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="400"
+   version="1.1"
+   id="svg41"
+   sodipodi:docname="spherical1.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata47">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs45">
+    <inkscape:tag
+       id="Set 1"
+       inkscape:label="Set 1" />
+    <linearGradient
+       id="linearGradient8602"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#4dc13e;stop-opacity:1;"
+         offset="0"
+         id="stop8600" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8602"
+       id="linearGradient8604"
+       x1="275.34607"
+       y1="230.31306"
+       x2="308.16711"
+       y2="230.31306"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8602"
+       id="linearGradient8604-0"
+       x1="275.34607"
+       y1="230.31306"
+       x2="308.16711"
+       y2="230.31306"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="961"
+     id="namedview43"
+     showgrid="false"
+     inkscape:zoom="2.7058619"
+     inkscape:cx="297.1569"
+     inkscape:cy="105.31712"
+     inkscape:window-x="-8"
+     inkscape:window-y="57"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-grids="false" />
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g
+     id="g39"
+     transform="matrix(1,0,0,0.59382873,0,162.46851)"
+     style="display:inline">
+    <title
+       id="title9">Layer 1</title>
+    <ellipse
+       cx="200.46512"
+       cy="250"
+       id="svg_1"
+       rx="200"
+       ry="150"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5" />
+    <line
+       stroke-opacity="null"
+       fill-opacity="null"
+       x1="0"
+       y1="250"
+       x2="600"
+       y2="250"
+       id="svg_2"
+       stroke-linejoin="null"
+       stroke-linecap="null"
+       style="fill:none;stroke:#000000;stroke-width:1.5" />
+    <circle
+       stroke-opacity="null"
+       fill-opacity="null"
+       cx="200"
+       cy="250"
+       id="svg_5"
+       r="2"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5" />
+    <circle
+       stroke-opacity="null"
+       fill-opacity="null"
+       cx="488.5"
+       cy="251.5"
+       id="svg_6"
+       r="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5" />
+    <circle
+       stroke-opacity="null"
+       fill-opacity="null"
+       cx="548.5"
+       cy="278.5"
+       id="svg_7"
+       r="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5" />
+    <line
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_13"
+       y2="400"
+       x2="200.38464"
+       y1="50"
+       x1="200"
+       fill-opacity="null"
+       style="fill:none;stroke:#000000;stroke-width:1.5" />
+    <g
+       id="g8566">
+      <line
+         style="fill:none;stroke:#ffaa56;stroke-width:2.08904648"
+         x1="238.71863"
+         y1="92.441719"
+         x2="344.79453"
+         y2="136.05698"
+         id="svg_19"
+         stroke-linejoin="null"
+         stroke-linecap="null" />
+      <ellipse
+         inkscape:label="svg_24"
+         style="fill:#007fff;stroke:#ffaa56;stroke-width:1.59986293"
+         cx="291.94299"
+         cy="115.58703"
+         id="svg_24"
+         rx="1.5432239"
+         ry="3.2713602" />
+    </g>
+    <g
+       id="g8561"
+       transform="matrix(1.0121156,0,0,0.97180131,-4.1781385,6.2221032)">
+      <line
+         style="fill:none;stroke:#ffaa56;stroke-width:1.92059886"
+         x1="405.91888"
+         y1="220.6985"
+         x2="344.80197"
+         y2="132.32553"
+         id="svg_20"
+         stroke-linejoin="null"
+         stroke-linecap="null" />
+      <ellipse
+         style="fill:#007fff;stroke:#ffaa56;stroke-width:1.5"
+         cx="374.83643"
+         cy="177.66722"
+         id="svg_23"
+         rx="1.923076"
+         ry="2.3076921" />
+    </g>
+    <text
+       transform="matrix(1.1138765,0,0,0.84543289,-32.520088,32.16742)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_28"
+       y="133.48837"
+       x="286.97675"
+       stroke-opacity="null"
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#ffaa56;stroke:#56aaff;stroke-width:0" />
+    <ellipse
+       ry="3.1808393"
+       rx="2.0521967"
+       id="svg_22"
+       cy="138.86258"
+       cx="346.522"
+       style="fill:#ff00ff;stroke:#ffaa56;stroke-width:1.81921673" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="geocentral"
+     style="display:inline">
+    <line
+       x1="200.00963"
+       y1="310.91418"
+       x2="290.29401"
+       y2="232.21977"
+       id="svg_8"
+       stroke-linejoin="null"
+       stroke-linecap="null"
+       style="fill:none;stroke:#0000ff;stroke-width:1.16693389" />
+    <line
+       x1="200"
+       y1="310.92569"
+       x2="374.51144"
+       y2="267.45944"
+       id="svg_9"
+       stroke-linejoin="null"
+       stroke-linecap="null"
+       style="fill:none;stroke:#0000ff;stroke-width:1.08736348" />
+    <line
+       x1="274.47076"
+       y1="208.58243"
+       x2="313.47723"
+       y2="258.32632"
+       id="svg_8-8"
+       stroke-linejoin="null"
+       stroke-linecap="null"
+       style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604);fill-opacity:1;stroke:#619e73;stroke-width:0.61053258;stroke-opacity:1" />
+    <line
+       x1="364.64795"
+       y1="235.86899"
+       x2="384.37494"
+       y2="299.0499"
+       id="svg_8-8-9"
+       stroke-linejoin="null"
+       stroke-linecap="null"
+       style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604-0);fill-opacity:1;stroke:#619e73;stroke-width:0.8619144;stroke-opacity:1" />
+    <line
+       style="display:inline;fill:none;stroke:#ff56ff;stroke-width:1.15402651"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_12-7"
+       y2="310.82025"
+       x2="200.04633"
+       y1="231.44905"
+       x1="375.06238" />
+    <path
+       id="svg_32-1"
+       d="m 302.35864,239.67331 c 1.60088,-1.114 2.34434,-3.55985 1.6606,-5.46294 l 2.3189,-1.61368 v 0 c 0.6838,1.90311 -0.0597,4.34895 -1.66042,5.46299 l -2.31891,1.61368 c -1.32178,0.91979 -2.85808,0.66011 -3.73516,-0.63137 l -1.15945,0.80684 1.91733,-2.41108 2.72048,-0.81625 -1.15945,0.80682 v 0 c 0.59141,0.87086 1.5032,1.29514 2.47235,1.15054"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;fill:#ff0a28;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.9429196,1.0605358)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-2"
+       y="234.17671"
+       x="324.52191"
+       stroke-opacity="null"
+       style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0a28;fill-opacity:1;stroke:#000000;stroke-width:0">g</text>
+    <path
+       id="svg_32-8"
+       d="m 224.03857,297.56932 c -1.1045,-2.09016 -3.01026,-2.03905 -4.25662,0.11408 l -1.59991,-3.02763 v 0 c 1.24637,-2.15322 3.15212,-2.20435 4.25662,-0.1144 l 1.59991,3.02765 c 0.91195,1.72574 1.01223,4.43562 0.24381,6.58842 l 0.79996,1.51382 -2.10058,-1.93276 -1.09922,-4.12252 0.79994,1.51382 v 0 c 0.51815,-1.45163 0.65376,-3.20307 0.36774,-4.74914"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;fill:#ff0000;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.9429196,1.0605358)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7"
+       y="276.69043"
+       x="213.60287"
+       stroke-opacity="null"
+       style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0"> Δβ</text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="geodesic"
+     style="display:none">
+    <g
+       transform="matrix(0.96142397,0,0,1.0425933,7.7152054,121.41028)"
+       id="g8547">
+      <g
+         id="g8483">
+        <line
+           x1="383.0069"
+           y1="140.43752"
+           x2="200.60294"
+           y2="309.84445"
+           id="svg_10"
+           stroke-linejoin="null"
+           stroke-linecap="null"
+           style="fill:none;stroke:#56aaff;stroke-width:1.50459921" />
+        <line
+           x1="299.79312"
+           y1="90.80442"
+           x2="200.85751"
+           y2="430.31201"
+           id="svg_11"
+           stroke-linejoin="null"
+           stroke-linecap="null"
+           style="fill:none;stroke:#56aaff;stroke-width:1.78219295" />
+        <ellipse
+           ry="2.3076921"
+           rx="1.923076"
+           id="svg_25"
+           cy="265.81485"
+           cx="247.77257"
+           style="fill:#ff00ff;stroke:#56aaff;stroke-width:1.5" />
+        <line
+           style="fill:none;stroke:#ff56ff;stroke-width:1.56410265"
+           stroke-linecap="null"
+           stroke-linejoin="null"
+           id="svg_12"
+           y2="303.43021"
+           x2="221.69275"
+           y1="116.87776"
+           x1="353.29062" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       font-size="24"
+       id="svg_30"
+       y="315.82812"
+       x="338.86264"
+       stroke-opacity="null"
+       style="font-size:15.71938992px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ffaa56;stroke:#56aaff;stroke-width:0"
+       transform="scale(1.1080886,0.90245492)">α</text>
+    <path
+       id="svg_32"
+       d="m 259.02006,382.35043 c -1.75521,-1.29724 -4.78372,-1.26552 -6.76437,0.0708 l -2.54248,-1.87907 v 0 c 1.98065,-1.33638 5.00916,-1.36811 6.76437,-0.071 l 2.54248,1.87908 c 1.44921,1.07107 1.60857,2.75293 0.38745,4.08905 l 1.27125,0.93954 -3.33812,-1.19955 -1.74682,-2.55861 1.27122,0.93954 v 0 c 0.82342,-0.90094 1.03892,-1.98796 0.5844,-2.94751"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;fill:#ff0000;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.9429196,1.0605358)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33"
+       y="361.052"
+       x="250.57027"
+       stroke-opacity="null"
+       style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">Δϑ</text>
+    <text
+       xml:space="preserve"
+       font-size="24"
+       id="svg_16"
+       y="441.03613"
+       x="230.28804"
+       style="font-size:17.26093864px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#56aaff;stroke:#56aaff;stroke-width:0"
+       transform="scale(1.0769915,0.9285124)">M</text>
+    <path
+       transform="matrix(1,0,0,0.59382873,0,162.46851)"
+       style="display:inline;fill:none;stroke:#ffaa56;stroke-width:1.50676548"
+       inkscape:connector-curvature="0"
+       stroke-opacity="null"
+       fill-opacity="null"
+       d="m 290.30363,123.66432 2.2361,-1.56392 -0.2259,1.2708 2.67642,1.46651 0.67772,-3.81239 -0.89214,-0.48883 2.2361,-1.56392 1.33247,3.51927 -0.89214,-0.48884 -1.12955,6.35401 -4.4607,-2.44419 -0.22591,1.27079 z"
+       id="svg_26" />
+    <path
+       transform="matrix(1.0121156,0,0,0.57708354,-4.1781385,166.16337)"
+       style="display:inline;fill:none;stroke:#ffaa56;stroke-width:1.33833992"
+       inkscape:connector-curvature="0"
+       stroke-opacity="null"
+       fill-opacity="null"
+       d="m 371.32739,183.28779 2.41553,0.28381 -0.5303,0.75039 2.0324,2.67694 1.59088,-2.25123 -0.67746,-0.89231 2.41552,0.2838 0.29434,3.28544 -0.67747,-0.8923 -2.65147,3.75203 -3.38733,-4.46153 -0.53029,0.7504 z"
+       id="svg_27" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="letters"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       font-size="24"
+       id="svg_17"
+       y="197.22156"
+       x="337.73315"
+       stroke-opacity="null"
+       style="font-size:17.12124634px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#007fff;stroke:#ff56ff;stroke-width:0"
+       transform="scale(0.87170968,1.1471709)">Qn</text>
+    <text
+       xml:space="preserve"
+       font-size="24"
+       id="svg_18"
+       y="138.67972"
+       x="491.8277"
+       stroke-opacity="null"
+       style="font-size:25.56863976px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#007fff;stroke:#ff56ff;stroke-width:0"
+       transform="matrix(0.77304593,0,0,0.76816746,0,162.46851)">Q</text>
+    <text
+       style="font-size:24.02210999px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_21"
+       y="96.782036"
+       x="475.55139"
+       transform="matrix(0.72628792,0,0,0.81762164,0,162.46851)">N</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.22293377px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30557337"
+       x="211.75208"
+       y="290.10748"
+       id="text8575"
+       transform="scale(0.89779333,1.1138421)"><tspan
+         sodipodi:role="line"
+         id="tspan8573"
+         x="211.75208"
+         y="290.10748"
+         style="stroke-width:0.30557337">O</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:11.50403118px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0a28;fill-opacity:1;stroke:none;stroke-width:0.28760079;"
+     x="327.56567"
+     y="226.45227"
+     id="text8690"
+     transform="scale(0.93138071,1.0736748)"><tspan
+       sodipodi:role="line"
+       id="tspan8688"
+       x="327.56567"
+       y="226.45227"
+       style="stroke-width:0.28760079;fill:#ff0a28;fill-opacity:1;">→</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:7.35498047px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0a28;fill-opacity:1;stroke:none;stroke-width:0.1838745;"
+     x="304.1033"
+     y="257.60123"
+     id="text8694"
+     transform="scale(1.0248948,0.97570992)"><tspan
+       sodipodi:role="line"
+       id="tspan8692"
+       x="304.1033"
+       y="257.60123"
+       style="stroke-width:0.1838745;fill:#ff0a28;fill-opacity:1;">c</tspan></text>
+</svg>
