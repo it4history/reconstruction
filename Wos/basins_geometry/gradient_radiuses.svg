@@ -13,7 +13,7 @@
    height="400"
    version="1.1"
    id="svg41"
-   sodipodi:docname="spherical1.svg"
+   sodipodi:docname="gradient_radiuses.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <metadata
      id="metadata47">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,8 +73,8 @@
      id="namedview43"
      showgrid="false"
      inkscape:zoom="2.7058619"
-     inkscape:cx="297.1569"
-     inkscape:cy="105.31712"
+     inkscape:cx="289.74903"
+     inkscape:cy="77.899763"
      inkscape:window-x="-8"
      inkscape:window-y="57"
      inkscape:window-maximized="1"
@@ -173,12 +173,12 @@
          stroke-linejoin="null"
          stroke-linecap="null" />
       <ellipse
-         style="fill:#007fff;stroke:#ffaa56;stroke-width:1.5"
-         cx="374.83643"
-         cy="177.66722"
+         style="fill:#007fff;stroke:#ffaa56;stroke-width:1.57242584"
+         cx="374.57822"
+         cy="174.95021"
          id="svg_23"
-         rx="1.923076"
-         ry="2.3076921" />
+         rx="2.125056"
+         ry="2.2948895" />
     </g>
     <text
        transform="matrix(1.1138765,0,0,0.84543289,-32.520088,32.16742)"
@@ -221,23 +221,23 @@
        stroke-linecap="null"
        style="fill:none;stroke:#0000ff;stroke-width:1.08736348" />
     <line
-       x1="274.47076"
-       y1="208.58243"
-       x2="313.47723"
-       y2="258.32632"
+       x1="283.3685"
+       y1="218.96025"
+       x2="300.14465"
+       y2="241.66586"
        id="svg_8-8"
        stroke-linejoin="null"
        stroke-linecap="null"
-       style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604);fill-opacity:1;stroke:#619e73;stroke-width:0.61053258;stroke-opacity:1" />
+       style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604);fill-opacity:1;stroke:#619e73;stroke-width:0.27051005;stroke-opacity:1" />
     <line
-       x1="364.64795"
-       y1="235.86899"
-       x2="384.37494"
-       y2="299.0499"
+       x1="370.79785"
+       y1="253.07753"
+       x2="380.66217"
+       y2="282.97357"
        id="svg_8-8-9"
        stroke-linejoin="null"
        stroke-linecap="null"
-       style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604-0);fill-opacity:1;stroke:#619e73;stroke-width:0.8619144;stroke-opacity:1" />
+       style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604-0);fill-opacity:1;stroke:#619e73;stroke-width:0.41925749;stroke-opacity:1" />
     <line
        style="display:inline;fill:none;stroke:#ff56ff;stroke-width:1.15402651"
        stroke-linecap="null"
@@ -253,15 +253,6 @@
        stroke-opacity="null"
        inkscape:connector-curvature="0"
        style="display:inline;fill:#ff0a28;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
-    <text
-       transform="scale(0.9429196,1.0605358)"
-       xml:space="preserve"
-       font-size="24"
-       id="svg_33-2"
-       y="234.17671"
-       x="324.52191"
-       stroke-opacity="null"
-       style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0a28;fill-opacity:1;stroke:#000000;stroke-width:0">g</text>
     <path
        id="svg_32-8"
        d="m 224.03857,297.56932 c -1.1045,-2.09016 -3.01026,-2.03905 -4.25662,0.11408 l -1.59991,-3.02763 v 0 c 1.24637,-2.15322 3.15212,-2.20435 4.25662,-0.1144 l 1.59991,3.02765 c 0.91195,1.72574 1.01223,4.43562 0.24381,6.58842 l 0.79996,1.51382 -2.10058,-1.93276 -1.09922,-4.12252 0.79994,1.51382 v 0 c 0.51815,-1.45163 0.65376,-3.20307 0.36774,-4.74914"
@@ -277,6 +268,71 @@
        x="213.60287"
        stroke-opacity="null"
        style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0"> Δβ</text>
+    <path
+       id="svg_32-1-8"
+       d="m 361.87489,250.84085 c -1.26418,0.8013 -1.90452,2.63824 -1.43028,4.10288 l -1.83119,1.16073 v 0 c -0.47429,-1.46467 0.16606,-3.30159 1.43015,-4.10293 l 1.83119,-1.16073 c 1.04379,-0.6616 2.22027,-0.42132 2.86037,0.58417 l 0.91559,-0.58035 -1.54381,1.77765 -2.11856,0.54377 0.91558,-0.58035 v 0 c -0.4316,-0.67802 -1.12239,-1.02583 -1.87307,-0.94315"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;fill:#ff0a28;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
+    <g
+       id="g4847">
+      <text
+         style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0a28;fill-opacity:1;stroke:#000000;stroke-width:0"
+         stroke-opacity="null"
+         x="322.30475"
+         y="233.6839"
+         id="svg_33-2"
+         font-size="24"
+         xml:space="preserve"
+         transform="scale(0.9429196,1.0605358)">Δg</text>
+      <text
+         transform="scale(0.91535301,1.0924747)"
+         id="text8694"
+         y="229.80576"
+         x="347.3476"
+         style="font-style:normal;font-weight:normal;font-size:8.23516273px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0a28;fill-opacity:1;stroke:none;stroke-width:0.20587906"
+         xml:space="preserve"><tspan
+           style="fill:#ff0a28;fill-opacity:1;stroke-width:0.20587906"
+           y="229.80576"
+           x="347.3476"
+           id="tspan8692"
+           sodipodi:role="line">q</tspan></text>
+    </g>
+    <g
+       transform="translate(56.895915,-2.1351735)"
+       id="g4847-9">
+      <text
+         style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0a28;fill-opacity:1;stroke:#000000;stroke-width:0"
+         stroke-opacity="null"
+         x="305.12186"
+         y="248.46835"
+         id="svg_33-2-5"
+         font-size="24"
+         xml:space="preserve"
+         transform="scale(0.9429196,1.0605358)">Δg</text>
+      <text
+         transform="scale(0.91535301,1.0924747)"
+         id="text8694-5"
+         y="246.31081"
+         x="328.79077"
+         style="font-style:normal;font-weight:normal;font-size:8.23516273px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0a28;fill-opacity:1;stroke:none;stroke-width:0.20587906"
+         xml:space="preserve"><tspan
+           style="fill:#ff0a28;fill-opacity:1;stroke-width:0.20587906"
+           y="246.31081"
+           x="328.79077"
+           id="tspan8692-3"
+           sodipodi:role="line">e</tspan></text>
+    </g>
+    <line
+       transform="matrix(1,0,0,0.59382873,0,162.46851)"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_19-4"
+       y2="223.80766"
+       x2="395.05215"
+       y1="131.70575"
+       x1="356.40787"
+       style="display:inline;fill:none;stroke:#e9ff56;stroke-width:1.83230352;stroke-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -284,7 +340,7 @@
      inkscape:label="geodesic"
      style="display:none">
     <g
-       transform="matrix(0.96142397,0,0,1.0425933,7.7152054,121.41028)"
+       transform="matrix(0.95334219,0,0,1.0425933,9.3364336,121.41028)"
        id="g8547">
       <g
          id="g8483">
@@ -377,17 +433,16 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="letters"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <text
        xml:space="preserve"
        font-size="24"
        id="svg_17"
        y="197.22156"
-       x="337.73315"
+       x="340.70087"
        stroke-opacity="null"
        style="font-size:17.12124634px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#007fff;stroke:#ff56ff;stroke-width:0"
-       transform="scale(0.87170968,1.1471709)">Qn</text>
+       transform="scale(0.87170969,1.1471709)">Qn</text>
     <text
        xml:space="preserve"
        font-size="24"
@@ -398,13 +453,13 @@
        style="font-size:25.56863976px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#007fff;stroke:#ff56ff;stroke-width:0"
        transform="matrix(0.77304593,0,0,0.76816746,0,162.46851)">Q</text>
     <text
-       style="font-size:24.02210999px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0"
+       style="font-size:13.14198112px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0"
        xml:space="preserve"
        font-size="24"
        id="svg_21"
-       y="96.782036"
-       x="475.55139"
-       transform="matrix(0.72628792,0,0,0.81762164,0,162.46851)">N</text>
+       y="216.8652"
+       x="377.71222"
+       transform="scale(0.90447061,1.1056191)">N</text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12.22293377px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30557337"
@@ -418,28 +473,4 @@
          y="290.10748"
          style="stroke-width:0.30557337">O</tspan></text>
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:11.50403118px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0a28;fill-opacity:1;stroke:none;stroke-width:0.28760079;"
-     x="327.56567"
-     y="226.45227"
-     id="text8690"
-     transform="scale(0.93138071,1.0736748)"><tspan
-       sodipodi:role="line"
-       id="tspan8688"
-       x="327.56567"
-       y="226.45227"
-       style="stroke-width:0.28760079;fill:#ff0a28;fill-opacity:1;">→</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:7.35498047px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0a28;fill-opacity:1;stroke:none;stroke-width:0.1838745;"
-     x="304.1033"
-     y="257.60123"
-     id="text8694"
-     transform="scale(1.0248948,0.97570992)"><tspan
-       sodipodi:role="line"
-       id="tspan8692"
-       x="304.1033"
-       y="257.60123"
-       style="stroke-width:0.1838745;fill:#ff0a28;fill-opacity:1;">c</tspan></text>
 </svg>
