@@ -72,13 +72,13 @@
      inkscape:window-height="961"
      id="namedview43"
      showgrid="false"
-     inkscape:zoom="7.6631803"
-     inkscape:cx="349.05217"
-     inkscape:cy="153.83453"
+     inkscape:zoom="5.4017383"
+     inkscape:cx="301.44183"
+     inkscape:cy="132.98667"
      inkscape:window-x="-8"
      inkscape:window-y="57"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4851"
+     inkscape:current-layer="svg41"
      inkscape:snap-midpoints="true"
      inkscape:snap-grids="false" />
   <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
@@ -195,13 +195,6 @@
        x="286.97675"
        stroke-opacity="null"
        style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#ffaa56;stroke:#56aaff;stroke-width:0" />
-    <ellipse
-       ry="1.3610607"
-       rx="0.8682006"
-       id="svg_22"
-       cy="136.16805"
-       cx="345.58643"
-       style="fill:#ff00ff;stroke:#ffaa56;stroke-width:0.34421444;stroke-miterlimit:4;stroke-dasharray:none" />
     <g
        transform="translate(48.615561,-21.68917)"
        id="g8566-6"
@@ -240,11 +233,11 @@
        stroke-linecap="null"
        stroke-linejoin="null"
        id="svg_19-4"
-       y2="313.22498"
-       x2="520.93243"
-       y1="250.60246"
-       x1="323.29889"
-       style="display:inline;fill:none;stroke:#e9ff56;stroke-width:0.65641212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       y2="228.01869"
+       x2="200.18594"
+       y1="231.96783"
+       x1="363.2207"
+       style="display:inline;fill:none;stroke:#e9ff56;stroke-width:0.14971723;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <line
        x1="200.00963"
        y1="310.91418"
@@ -264,10 +257,10 @@
        stroke-linecap="null"
        style="fill:none;stroke:#0000ff;stroke-width:0.11776224;stroke-miterlimit:4;stroke-dasharray:none" />
     <line
-       x1="283.3685"
-       y1="218.96025"
-       x2="300.14465"
-       y2="241.66586"
+       x1="280.22601"
+       y1="220.01012"
+       x2="303.28717"
+       y2="240.61598"
        id="svg_8-8"
        stroke-linejoin="null"
        stroke-linecap="null"
@@ -283,7 +276,7 @@
        style="display:inline;opacity:0.99500002;fill:url(#linearGradient8604-0);fill-opacity:1;stroke:#619e73;stroke-width:0.41925749;stroke-opacity:1" />
     <path
        id="svg_32-1"
-       d="m 301.78905,238.41403 c 0.60811,-1.14375 0.52334,-2.68576 -0.18935,-3.44418 l 0.88086,-1.65675 v 0 c 0.71272,0.7584 0.79748,2.30044 0.18945,3.44414 l -0.88086,1.65676 c -0.5021,0.94434 -1.33869,1.34548 -2.03398,0.97526 l -0.44043,0.82837 0.52328,-1.93429 1.23846,-1.37921 -0.44043,0.82837 v 0 c 0.46882,0.24966 1.01678,0.15319 1.4858,-0.26152"
+       d="m 302.29807,237.15789 c 0.36757,-0.86209 0.31633,-2.02437 -0.11445,-2.59603 l 0.53243,-1.24876 v 0 c 0.4308,0.57164 0.48203,1.73394 0.11451,2.596 l -0.53243,1.24877 c -0.30349,0.71179 -0.80916,1.01414 -1.22942,0.73509 l -0.26622,0.62438 0.31629,-1.45796 0.74858,-1.03957 -0.26621,0.62438 v 0 c 0.28337,0.18818 0.61458,0.11547 0.89808,-0.19712"
        stroke-opacity="null"
        inkscape:connector-curvature="0"
        style="display:inline;fill:#ff0a28;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
@@ -294,23 +287,25 @@
        inkscape:connector-curvature="0"
        style="display:inline;fill:#ff0000;stroke:#56aaff;stroke-width:0" />
     <text
-       transform="scale(1.0921347,0.91563797)"
+       transform="scale(0.87482699,1.1430832)"
        xml:space="preserve"
        font-size="24"
        id="svg_33-7"
-       y="317.56552"
-       x="207.2603"
+       y="254.29813"
+       x="258.74393"
        stroke-opacity="null"
-       style="font-size:5.38420677px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0"> Δβ</text>
+       style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">Δθ, Δβ </text>
     <path
        id="svg_32-1-8"
-       d="m 395.23108,279.05985 c 0.75442,-1.1477 0.53807,-2.88999 -0.4832,-3.89148 l 1.09277,-1.6625 v 0 c 1.02134,1.0015 1.23768,2.74377 0.48335,3.89146 l -1.09279,1.66251 c -0.62289,0.94763 -1.73735,1.21583 -2.70953,0.65211 l -0.5464,0.83124 0.58709,-2.04985 1.5985,-1.27511 -0.54639,0.83122 v 0 c 0.65552,0.38014 1.39635,0.39037 2.00876,0.0278"
+       d="m 311.98976,233.96654 c 0.2957,-0.76372 -0.0415,-1.78492 -0.7531,-2.28092 l 0.42831,-1.10626 v 0 c 0.71166,0.49598 1.04883,1.51716 0.75318,2.28087 l -0.42831,1.10627 c -0.24414,0.63059 -0.85485,0.90424 -1.48481,0.66535 l -0.21415,0.55313 0.0892,-1.28687 0.76748,-0.92565 -0.21417,0.55312 v 0 c 0.42476,0.16108 0.85369,0.092 1.16307,-0.18717"
        stroke-opacity="null"
        inkscape:connector-curvature="0"
-       style="display:inline;fill:#ff0a28;fill-opacity:1;stroke:#56aaff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="display:inline;fill:#ff0a28;fill-opacity:1;stroke:#56aaff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:transform-center-x="-2.8436256"
+       inkscape:transform-center-y="0.25619151" />
     <g
        id="g4847"
-       transform="matrix(0.5751639,0,0,0.48885077,128.55175,120.47791)">
+       transform="matrix(0.49319279,0,0,0.38507509,153.03739,144.60036)">
       <text
          style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0a28;fill-opacity:1;stroke:#000000;stroke-width:0"
          stroke-opacity="null"
@@ -334,7 +329,7 @@
            sodipodi:role="line">q</tspan></text>
     </g>
     <g
-       transform="matrix(0.619915,0,0,0.56722583,218.72281,132.29848)"
+       transform="matrix(0.51553126,0,0,0.41877973,168.18234,124.12208)"
        id="g4847-9">
       <text
          style="font-size:12.16883755px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0a28;fill-opacity:1;stroke:#000000;stroke-width:0"
@@ -362,7 +357,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="geodesic"
+     inkscape:label="spheric"
      style="display:none">
     <g
        transform="matrix(0.95334219,0,0,1.0425933,9.3364336,121.41028)"
@@ -394,15 +389,6 @@
            cy="265.81485"
            cx="247.77257"
            style="fill:#ff00ff;stroke:#56aaff;stroke-width:1.5" />
-        <line
-           style="fill:none;stroke:#ff56ff;stroke-width:1.56410265"
-           stroke-linecap="null"
-           stroke-linejoin="null"
-           id="svg_12"
-           y2="303.43021"
-           x2="221.69275"
-           y1="116.87776"
-           x1="353.29062" />
       </g>
     </g>
     <text
@@ -453,6 +439,16 @@
        fill-opacity="null"
        d="m 371.32739,183.28779 2.41553,0.28381 -0.5303,0.75039 2.0324,2.67694 1.59088,-2.25123 -0.67746,-0.89231 2.41552,0.2838 0.29434,3.28544 -0.67747,-0.8923 -2.65147,3.75203 -3.38733,-4.46153 -0.53029,0.7504 z"
        id="svg_27" />
+    <line
+       transform="matrix(0.95334219,0,0,1.0425933,9.3364336,121.41028)"
+       style="display:none;opacity:0.95;fill:none;stroke:#ff56ff;stroke-width:1.56410265"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_12"
+       y2="303.43021"
+       x2="221.69275"
+       y1="116.87776"
+       x1="353.29062" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -498,33 +494,25 @@
          transform="rotate(-6.4994893)" />
     </g>
     <text
-       style="font-size:3.45182991px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0"
        xml:space="preserve"
-       font-size="24"
-       id="svg_21"
-       y="239.68349"
-       x="352.32254"
-       transform="scale(0.98513656,1.0150877)">N</text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12.22293377px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30557337"
-       x="211.75208"
-       y="290.10748"
+       style="font-style:normal;font-weight:normal;font-size:6.74316072px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16857903"
+       x="226.14841"
+       y="285.90295"
        id="text8575"
-       transform="scale(0.89779333,1.1138421)"><tspan
+       transform="scale(0.89735403,1.1143874)"><tspan
          sodipodi:role="line"
          id="tspan8573"
-         x="211.75208"
-         y="290.10748"
-         style="stroke-width:0.30557337">O</tspan></text>
+         x="226.14841"
+         y="285.90295"
+         style="stroke-width:0.16857903">O</tspan></text>
     <text
-       style="font-size:13.14198112px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#730073;fill-opacity:1;stroke:#ffaa56;stroke-width:0"
+       style="font-size:6.70203161px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#730073;fill-opacity:1;stroke:#ffaa56;stroke-width:0"
        xml:space="preserve"
        font-size="24"
        id="svg_21-1"
-       y="292.61972"
-       x="556.30292"
-       transform="scale(0.90447062,1.1056191)">K</text>
+       y="250.51118"
+       x="189.27313"
+       transform="scale(1.0690186,0.93543742)">K</text>
     <text
        xml:space="preserve"
        font-size="24"
@@ -535,23 +523,45 @@
        style="font-size:11.1139679px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#007fff;stroke:#ff56ff;stroke-width:0"
        transform="scale(0.80828869,1.2371817)">Qs</text>
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="geodesic"
+     style="display:none">
+    <text
+       style="font-size:3.45182991px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_21"
+       y="239.68349"
+       x="352.32254"
+       transform="scale(0.98513656,1.0150877)">N</text>
+    <ellipse
+       transform="matrix(1,0,0,0.59382873,0,162.46851)"
+       ry="1.3610607"
+       rx="0.8682006"
+       id="svg_22"
+       cy="136.16805"
+       cx="345.58643"
+       style="display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0.34421444;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
   <ellipse
      ry="0.47189918"
      rx="0.49642497"
      id="svg_22-5"
-     cy="241.44162"
-     cx="341.58319"
+     cy="240.85927"
+     cx="342.74786"
      style="display:inline;opacity:0.87999998;fill:#008000;stroke:#ffaa56;stroke-width:0.34463194;stroke-opacity:0.4848485" />
   <ellipse
-     ry="0.26925188"
-     rx="0.27744487"
+     ry="0.41396147"
+     rx="0.42215449"
      id="svg_22-5-6"
-     cy="264.6535"
-     cx="385.30521"
-     style="display:inline;opacity:0.95;fill:#008000;stroke:#f7d36f;stroke-width:0.19275591;stroke-opacity:0.66666669;stroke-miterlimit:4;stroke-dasharray:none" />
+     cy="264.91306"
+     cx="384.59174"
+     style="display:inline;opacity:0.95;fill:#008000;stroke:#f7d36f;stroke-width:0.29481912;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667" />
   <g
      id="g4989"
-     transform="matrix(1.5740583,0,0,1.7476454,-221.49464,-198.47362)">
+     transform="matrix(2.0616813,0,0,1.7476454,-407.19762,-197.99541)">
     <text
        transform="scale(0.81635253,1.224961)"
        x="469.33231"
@@ -559,7 +569,7 @@
        id="svg_21-4-4"
        font-size="24"
        xml:space="preserve"
-       style="font-size:1.71435142px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">Qs</text>
+       style="font-size:1.71435142px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">to</text>
     <text
        transform="scale(0.88688185,1.1275459)"
        x="430.51105"
@@ -570,23 +580,23 @@
        style="font-size:2.81967187px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">h</text>
   </g>
   <g
-     transform="matrix(2.0076036,0,0,1.6942422,-430.50402,-206.461)"
-     id="g4989-0">
+     id="g4821"
+     transform="matrix(1.3101592,0,0,1,-110.40672,-0.39703531)">
     <text
-       transform="scale(0.81635253,1.224961)"
-       x="469.33231"
-       y="215.60869"
+       transform="scale(0.80733941,1.2386364)"
+       x="422.58759"
+       y="193.74948"
        id="svg_21-4-4-2"
        font-size="24"
        xml:space="preserve"
-       style="font-size:1.71435142px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">Q</text>
+       style="font-size:3.55545497px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">from</text>
     <text
-       transform="scale(0.88688185,1.1275459)"
-       x="430.51105"
-       y="233.28964"
+       transform="scale(0.74442144,1.3433251)"
+       x="455.83917"
+       y="177.04848"
        id="svg_21-4-4-0-1"
        font-size="24"
        xml:space="preserve"
-       style="font-size:2.81967187px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">h</text>
+       style="font-size:4.71556807px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#008000;stroke:#ffaa56;stroke-width:0">h</text>
   </g>
 </svg>
