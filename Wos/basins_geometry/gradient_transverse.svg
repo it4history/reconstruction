@@ -63,15 +63,16 @@
      inkscape:window-height="961"
      id="namedview43"
      showgrid="false"
-     inkscape:zoom="5.4017383"
-     inkscape:cx="263.9852"
-     inkscape:cy="135.84744"
+     inkscape:zoom="5.7875767"
+     inkscape:cx="265.2469"
+     inkscape:cy="9.3437306"
      inkscape:window-x="-8"
      inkscape:window-y="57"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer4"
      inkscape:snap-midpoints="true"
-     inkscape:snap-grids="false" />
+     inkscape:snap-grids="false"
+     showguides="true" />
   <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
   <g
      id="g39"
@@ -154,7 +155,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="geocentral"
-     style="display:inline">
+     style="display:inline;opacity:1">
     <line
        stroke-linecap="null"
        stroke-linejoin="null"
@@ -235,8 +236,8 @@
        xml:space="preserve"
        font-size="24"
        id="svg_33-7-4"
-       y="276.72327"
-       x="334.25424"
+       y="267.77612"
+       x="129.30582"
        stroke-opacity="null"
        style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">λ=0</text>
     <text
@@ -244,10 +245,10 @@
        xml:space="preserve"
        font-size="24"
        id="svg_33-7-7"
-       y="268.85507"
-       x="334.30872"
+       y="275.3663"
+       x="319.72388"
        stroke-opacity="null"
-       style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">λ=2Pi</text>
+       style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">λ=Pi</text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -272,52 +273,46 @@
        x2="200.00316"
        y1="254.0058"
        x1="316.74716" />
-    <g
-       style="fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="translate(-54.979496,26.966134)"
-       id="g8521">
-      <text
-         transform="scale(0.99109716,1.0089828)"
-         style="font-size:6.69116592px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.50919092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="335.40524"
-         y="249.38538"
-         id="svg_18"
-         font-size="24"
-         xml:space="preserve">Q</text>
-      <ellipse
-         style="display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         cx="306.21442"
-         cy="280.78586"
-         id="svg_22-6"
-         rx="1.5092607"
-         ry="1.6390332"
-         transform="rotate(-6.4994893)" />
-      <ellipse
-         style="display:inline;fill:#e4675b;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         cx="309.43915"
-         cy="318.73605"
-         id="svg_22-6-6"
-         rx="0.77345157"
-         ry="0.81527388"
-         transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)" />
-      <text
-         transform="scale(0.87482696,1.1430832)"
-         xml:space="preserve"
-         font-size="24"
-         id="svg_33-7-7-0"
-         y="167.11807"
-         x="295.58566"
-         stroke-opacity="null"
-         style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">λ=1,5Pi</text>
-      <ellipse
-         style="display:inline;fill:#e4675b;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         cx="231.61009"
-         cy="220.1879"
-         id="svg_22-6-6-5"
-         rx="0.77345157"
-         ry="0.81527388"
-         transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)" />
-    </g>
+    <text
+       xml:space="preserve"
+       font-size="24"
+       id="svg_18"
+       y="276.11142"
+       x="279.93188"
+       style="font-size:6.69116592px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.50919092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(0.99109717,1.0089828)">Q</text>
+    <ellipse
+       transform="rotate(-6.4994893)"
+       ry="1.6390332"
+       rx="1.5092607"
+       id="svg_22-6"
+       cy="301.35532"
+       cx="248.53587"
+       style="display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <ellipse
+       transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+       ry="0.81527388"
+       rx="0.77345157"
+       id="svg_22-6-6"
+       cy="339.5015"
+       cx="251.6877"
+       style="display:inline;fill:#e4675b;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="231.28104"
+       y="197.22"
+       id="svg_33-7-7-0"
+       font-size="24"
+       xml:space="preserve"
+       transform="scale(0.87482696,1.1430832)">λ=Pi/2</text>
+    <ellipse
+       transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+       ry="0.81527388"
+       rx="0.77345157"
+       id="svg_22-6-6-5"
+       cy="240.95335"
+       cx="173.85864"
+       style="display:inline;fill:#e4675b;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
        id="g4828"
        transform="matrix(1.0052723,0,0,0.80777424,-0.14456714,58.398968)">
@@ -376,6 +371,89 @@
          x="326.41293"
          y="307.56622"
          style="stroke-width:0.15191141">x</tspan></text>
+    <g
+       id="g8646"
+       transform="matrix(0.80199862,0,0,0.60733185,-6.7588247,250.21017)"
+       style="fill:#de8787">
+      <text
+         style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#de8787;stroke:#000000;stroke-width:0"
+         stroke-opacity="null"
+         x="226.49693"
+         y="191.51854"
+         id="svg_33-7-7-5"
+         font-size="24"
+         xml:space="preserve"
+         transform="scale(0.87482696,1.1430832)">San Francisco</text>
+      <ellipse
+         transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+         ry="0.81527388"
+         rx="0.77345157"
+         id="svg_22-6-6-2"
+         cy="241.27362"
+         cx="168.32663"
+         style="display:inline;fill:#de8787;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g8646-7"
+       transform="matrix(0.80199862,0,0,0.60733185,133.45096,175.44416)"
+       style="display:inline;fill:#de8787">
+      <text
+         style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#de8787;stroke:#000000;stroke-width:0"
+         stroke-opacity="null"
+         x="226.49693"
+         y="191.51854"
+         id="svg_33-7-7-5-0"
+         font-size="24"
+         xml:space="preserve"
+         transform="scale(0.87482696,1.1430832)">London</text>
+      <ellipse
+         transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+         ry="0.81527388"
+         rx="0.77345157"
+         id="svg_22-6-6-2-4"
+         cy="241.27362"
+         cx="168.32663"
+         style="display:inline;fill:#de8787;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <text
+       transform="scale(1.0053006,0.99472735)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-7-5-6"
+       y="249.01216"
+       x="123.02603"
+       stroke-opacity="null"
+       style="font-size:3.29004598px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#de8787;stroke:#000000;stroke-width:0">Tokyo</text>
+    <ellipse
+       style="display:inline;fill:#de8787;fill-opacity:1;stroke:#be555e;stroke-width:0.21167865;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="94.644928"
+       cy="259.72388"
+       id="svg_22-6-6-2-2"
+       rx="0.61870944"
+       ry="0.4976418"
+       transform="matrix(0.99651772,-0.08338128,0.15328631,0.98818182,0,0)" />
+    <g
+       id="g8646-7-4"
+       transform="matrix(0.80199862,0,0,0.60733185,68.831731,89.451857)"
+       style="display:inline;fill:#de8787">
+      <text
+         style="font-size:4.71413612px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#de8787;stroke:#000000;stroke-width:0"
+         stroke-opacity="null"
+         x="226.49693"
+         y="191.51854"
+         id="svg_33-7-7-5-0-0"
+         font-size="24"
+         xml:space="preserve"
+         transform="scale(0.87482696,1.1430832)">Delhi</text>
+      <ellipse
+         transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+         ry="0.81527388"
+         rx="0.77345157"
+         id="svg_22-6-6-2-4-7"
+         cy="241.27362"
+         cx="168.32663"
+         style="display:inline;fill:#de8787;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
