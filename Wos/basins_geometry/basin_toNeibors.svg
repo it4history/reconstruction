@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="400"
+   version="1.1"
+   id="svg41"
+   sodipodi:docname="basin_toNeibors.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata47">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs45">
+    <inkscape:tag
+       id="Set 1"
+       inkscape:label="Set 1" />
+    <linearGradient
+       id="linearGradient8602"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#4dc13e;stop-opacity:1;"
+         offset="0"
+         id="stop8600" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="961"
+     id="namedview43"
+     showgrid="false"
+     inkscape:zoom="2.8937884"
+     inkscape:cx="208.3095"
+     inkscape:cy="83.994819"
+     inkscape:window-x="-8"
+     inkscape:window-y="57"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-grids="false"
+     showguides="true" />
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g
+     id="g39"
+     transform="matrix(1,0,0,0.59382873,0,162.46851)"
+     style="display:inline">
+    <title
+       id="title9">Layer 1</title>
+    <ellipse
+       cx="200"
+       cy="248.44115"
+       id="svg_1"
+       rx="89.800842"
+       ry="151.3597"
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:0.39830789;stroke-miterlimit:4;stroke-dasharray:none" />
+    <circle
+       stroke-opacity="null"
+       fill-opacity="null"
+       cx="488.5"
+       cy="251.5"
+       id="svg_6"
+       r="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5" />
+    <circle
+       stroke-opacity="null"
+       fill-opacity="null"
+       cx="548.5"
+       cy="278.5"
+       id="svg_7"
+       r="0"
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.5" />
+    <g
+       id="g4810"
+       style="display:inline">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:1.5"
+         stroke-linecap="null"
+         stroke-linejoin="null"
+         id="svg_2"
+         y2="247.69115"
+         x2="600"
+         y1="247.69115"
+         x1="0"
+         fill-opacity="null"
+         stroke-opacity="null" />
+      <line
+         style="fill:none;stroke:#000000;stroke-width:0.924685"
+         fill-opacity="null"
+         x1="200.98846"
+         y1="50"
+         x2="201.13464"
+         y2="400"
+         id="svg_13"
+         stroke-linejoin="null"
+         stroke-linecap="null" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="geocentral"
+     style="display:inline;opacity:1">
+    <path
+       id="svg_32-8"
+       d="m 232.87384,304.01086 c -0.63147,-2.5325 -2.85287,-3.98965 -4.9616,-3.25473 l -0.91471,-3.66838 v 0 c 2.10877,-0.73503 4.33017,0.72207 4.96172,3.2544 l 0.91471,3.6684 c 0.52139,2.09097 -0.20114,4.3277 -1.75663,5.43804 l 0.45735,1.83421 -1.83295,-3.19003 0.003,-4.14675 0.45732,1.8342 v 0 c 1.04888,-0.74871 1.74782,-2.03682 1.89524,-3.49277"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;fill:#ff0000;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7"
+       y="195.45026"
+       x="222.56973"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0">Δβ</text>
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4"
+       y="281.19504"
+       x="324.95688"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#ff0000;stroke:#000000;stroke-width:0">Δλ</text>
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5"
+       y="284.75989"
+       x="253.41927"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#ff0000;stroke:#000000;stroke-width:0">α</text>
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-6"
+       y="230.90103"
+       x="220.81801"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#0000ff;stroke:#000000;stroke-width:0">North-East</text>
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-6-4"
+       y="353.91971"
+       x="154.86563"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#0000ff;stroke:#000000;stroke-width:0">South-West</text>
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-6-43"
+       y="230.90103"
+       x="156.62418"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#0000ff;stroke:#000000;stroke-width:0">North-West</text>
+    <text
+       transform="scale(0.93630057,1.0680331)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-6-2"
+       y="353.91971"
+       x="221.14517"
+       stroke-opacity="null"
+       style="font-size:10.46947193px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#0000ff;stroke:#000000;stroke-width:0">South-East</text>
+    <path
+       id="svg_32-8-8"
+       d="m 214.7744,305.16766 c -0.57165,-1.65344 -2.58263,-2.6048 -4.49161,-2.12497 l -0.82806,-2.39505 v 0 c 1.90902,-0.47989 3.91999,0.47143 4.49172,2.12476 l 0.82806,2.39506 c 0.47201,1.36518 -0.18209,2.82551 -1.59023,3.55044 l 0.41403,1.19754 -1.65933,-2.08274 0.002,-2.70737 0.414,1.19753 v 0 c 0.94952,-0.48883 1.58225,-1.32982 1.71571,-2.28039"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:1;fill:#29d663;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.96411043,1.0372256)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-0"
+       y="289.91882"
+       x="221.44693"
+       stroke-opacity="null"
+       style="font-size:6.77599335px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#29d663;fill-opacity:1;stroke:#000000;stroke-width:0">γ</text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="letters"
+     style="display:inline">
+    <line
+       style="display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.42897394;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_12-7"
+       y2="310.35449"
+       x2="200.00316"
+       y1="254.0058"
+       x1="316.74716" />
+    <text
+       xml:space="preserve"
+       font-size="24"
+       id="svg_18"
+       y="276.11142"
+       x="279.93188"
+       style="font-size:6.69116592px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.50919092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(0.99109717,1.0089828)">Q</text>
+    <ellipse
+       transform="rotate(-6.4994893)"
+       ry="1.6390332"
+       rx="1.5092607"
+       id="svg_22-6"
+       cy="301.35532"
+       cx="248.53587"
+       style="display:inline;fill:#895be4;fill-opacity:1;stroke:#8b55be;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <ellipse
+       transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+       ry="0.81527388"
+       rx="0.77345157"
+       id="svg_22-6-6"
+       cy="339.5015"
+       cx="251.6877"
+       style="display:inline;fill:#e4675b;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <ellipse
+       transform="matrix(0.99395108,-0.10982371,0.11666568,0.99317124,0,0)"
+       ry="0.81527388"
+       rx="0.77345157"
+       id="svg_22-6-6-5"
+       cy="240.95335"
+       cx="173.85864"
+       style="display:inline;fill:#e4675b;fill-opacity:1;stroke:#be555e;stroke-width:0.30293092;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g4828"
+       transform="matrix(1.0052723,0,0,0.80777424,-0.14456714,58.398968)">
+      <ellipse
+         ry="2.2542846"
+         rx="1.041276"
+         stroke-opacity="null"
+         fill-opacity="null"
+         cx="200.22855"
+         cy="250.38577"
+         id="svg_5"
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.14907551"
+         transform="matrix(1,0,0,0.59382873,0,162.46851)" />
+      <text
+         transform="scale(0.89735403,1.1143874)"
+         id="text8575"
+         y="285.90295"
+         x="226.14841"
+         style="font-style:normal;font-weight:normal;font-size:6.74316072px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16857903"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.16857903"
+           y="285.90295"
+           x="226.14841"
+           id="tspan8573"
+           sodipodi:role="line">O</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.07645607px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15191141"
+       x="202.44711"
+       y="198.73674"
+       id="text8575-6"
+       transform="scale(1.0010613,0.99893983)"><tspan
+         sodipodi:role="line"
+         id="tspan8573-3"
+         x="202.44711"
+         y="198.73674"
+         style="stroke-width:0.15191141">y, vert</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.07645607px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15191141"
+       x="310.87888"
+       y="306.87436"
+       id="text8575-6-2"
+       transform="scale(1.0010613,0.99893983)"><tspan
+         sodipodi:role="line"
+         id="tspan8573-3-5"
+         x="310.87888"
+         y="306.87436"
+         style="stroke-width:0.15191141">x, hor</tspan></text>
+    <ellipse
+       style="display:inline;fill:#de8787;fill-opacity:1;stroke:#be555e;stroke-width:0.21167865;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="94.644928"
+       cy="259.72388"
+       id="svg_22-6-6-2-2"
+       rx="0.61870944"
+       ry="0.4976418"
+       transform="matrix(0.99651772,-0.08338128,0.15328631,0.98818182,0,0)" />
+    <line
+       style="display:inline;fill:#61c0de;fill-opacity:1;stroke:#4265d1;stroke-width:0.32901981;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_12-7-8"
+       y2="309.48825"
+       x2="201.73405"
+       y1="243.32559"
+       x1="260.22485" />
+    <path
+       id="svg_32-8-8-5"
+       d="m 187.53162,304.93007 c 0.57165,-1.65344 2.58263,-2.6048 4.49161,-2.12497 l 0.82806,-2.39505 v 0 c -1.90902,-0.47989 -3.91999,0.47143 -4.49172,2.12476 l -0.82806,2.39506 c -0.47201,1.36518 0.18209,2.82551 1.59023,3.55044 l -0.41403,1.19754 1.65933,-2.08274 -0.002,-2.70737 -0.414,1.19753 v 0 c -0.94952,-0.48883 -1.58225,-1.32982 -1.71571,-2.28039"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:1;fill:#29d663;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.96411042,1.0372256)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-0-4"
+       y="289.88184"
+       x="191.09482"
+       stroke-opacity="null"
+       style="font-size:6.77599335px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#29d663;fill-opacity:1;stroke:#000000;stroke-width:0">γ</text>
+    <line
+       style="display:inline;fill:#61c0de;fill-opacity:1;stroke:#4265d1;stroke-width:0.33425492;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_12-7-8-9"
+       y2="309.2489"
+       x2="200.56996"
+       y1="242.35672"
+       x1="140.86139" />
+    <path
+       id="svg_32-8-8-6"
+       d="m 187.38514,313.5217 c 0.57165,1.65344 2.58263,2.6048 4.49161,2.12497 l 0.82806,2.39505 v 0 c -1.90902,0.47989 -3.91999,-0.47143 -4.49172,-2.12476 l -0.82806,-2.39506 c -0.47201,-1.36518 0.18209,-2.82551 1.59023,-3.55044 l -0.41403,-1.19754 1.65933,2.08274 -0.002,2.70737 -0.414,-1.19753 v 0 c -0.94952,0.48883 -1.58225,1.32982 -1.71571,2.28039"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:1;fill:#29d663;fill-opacity:1;stroke:#56aaff;stroke-width:0" />
+    <text
+       transform="scale(0.96411042,1.0372256)"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_33-7-4-5-0-9"
+       y="309.27637"
+       x="190.70076"
+       stroke-opacity="null"
+       style="font-size:6.77599335px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;opacity:1;fill:#29d663;fill-opacity:1;stroke:#000000;stroke-width:0">γ</text>
+    <line
+       style="display:inline;fill:#61c0de;fill-opacity:1;stroke:#4265d1;stroke-width:0.32901981;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       stroke-linecap="null"
+       stroke-linejoin="null"
+       id="svg_12-7-8-8"
+       y2="376.51715"
+       x2="141.51236"
+       y1="310.35449"
+       x1="200.00316" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="geodesic"
+     style="display:none">
+    <text
+       style="font-size:3.45182991px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0"
+       xml:space="preserve"
+       font-size="24"
+       id="svg_21"
+       y="239.68349"
+       x="352.32254"
+       transform="scale(0.98513656,1.0150877)">N</text>
+    <ellipse
+       transform="matrix(1,0,0,0.59382873,0,162.46851)"
+       ry="1.3610607"
+       rx="0.8682006"
+       id="svg_22"
+       cy="136.16805"
+       cx="345.58643"
+       style="display:inline;fill:#ff00ff;stroke:#ffaa56;stroke-width:0.34421444;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>
