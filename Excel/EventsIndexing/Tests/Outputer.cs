@@ -10,7 +10,7 @@ namespace Routines.Excel.EventsIndexing.Tests
 {
     public abstract class Outputer
     {
-        protected const string Folder = "Excel/EventsIndexing/Tests";
+        protected const string Folder = "EventsIndexing/Tests";
 
         public abstract string FolderOut { get; }
 

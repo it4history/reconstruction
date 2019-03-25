@@ -1,8 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-# SharpDevelop 5.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routines", "Routines.csproj", "{23108E3C-99DA-4093-99C6-97DF5F3999AD}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routines", "Excel\Routines.csproj", "{23108E3C-99DA-4093-99C6-97DF5F3999AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logy.Maps", "Logy.Maps\Logy.Maps.csproj", "{F5168D45-96D8-413E-902A-BFA6282829CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,5 +17,15 @@ Global
 		{23108E3C-99DA-4093-99C6-97DF5F3999AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23108E3C-99DA-4093-99C6-97DF5F3999AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23108E3C-99DA-4093-99C6-97DF5F3999AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5168D45-96D8-413E-902A-BFA6282829CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5168D45-96D8-413E-902A-BFA6282829CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5168D45-96D8-413E-902A-BFA6282829CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5168D45-96D8-413E-902A-BFA6282829CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73FA2D10-8C28-4DD8-8D56-4FDA88B3B876}
 	EndGlobalSection
 EndGlobal

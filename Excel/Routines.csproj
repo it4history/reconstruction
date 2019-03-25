@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{23108E3C-99DA-4093-99C6-97DF5F3999AD}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Routines</RootNamespace>
+    <AssemblyName>Routines</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventsIndexing\Tests\Outputer.cs" />
+    <Compile Include="EventsIndexing\Tests\StagesLauncher.cs" />
+    <Compile Include="EventsIndexing\Tests\FullDbLauncher.cs" />
+    <Compile Include="EventsIndexing\Tests\Graphes.cs" />
+    <Compile Include="EventsIndexing\Tests\OutputType.cs" />
+    <Compile Include="EventsIndexing\Tests\EventtypesByYearsTests.cs" />
+    <Compile Include="EventsIndexing\Tests\Tech10Launcher.cs" />
+    <Compile Include="ExcelManager.cs" />
+    <Compile Include="EventsIndexing\EventtypesByYears.cs" />
+    <Compile Include="EventsIndexing\Tests\LauncherBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EventsIndexing\Tests\00 Техфайл 10.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EventsIndexing\Tests\00_База_2018_10_14.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EventsIndexing\Tests\outStages\поПодгруппам.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная40.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная40_сдвиг_1год.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная40_сдвиг_2год.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная40_сдвиг_3год.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная40_сдвиг_4год.csv" />
+    <None Include="EventsIndexing\Tests\outTech10\сводная40_сдвиг_5год.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная.xlsx" />
+    <None Include="EventsIndexing\Tests\out\сводная20.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная20.xlsx" />
+    <None Include="EventsIndexing\Tests\out\сводная20_сдвиг_1год.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная20_сдвиг_2год.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная20_сдвиг_3год.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная20_сдвиг_4год.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная20_сдвиг_5год.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная40.csv" />
+    <None Include="EventsIndexing\Tests\out\сводная_clusters3.gephi" />
+    <None Include="EventsIndexing\Tests\out\сводная_сдвиг_1год.xlsx" />
+    <None Include="EventsIndexing\Tests\out\сводная_сдвиг_2год.xlsx" />
+    <None Include="EventsIndexing\Tests\out\сводная_сдвиг_3год.xlsx" />
+    <None Include="EventsIndexing\Tests\out\сводная_сдвиг_4год.xlsx" />
+    <None Include="EventsIndexing\Tests\out\сводная_сдвиг_5год.xlsx" />
+    <None Include="EventsIndexing\Tests\out\своднаяГруппирована.gephi" />
+    <None Include="EventsIndexing\Tests\out\своднаяГруппирована.xlsx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
