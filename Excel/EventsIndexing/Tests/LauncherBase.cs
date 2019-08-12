@@ -32,7 +32,7 @@ namespace Routines.Excel.EventsIndexing.Tests
 
         public virtual bool ReadLegend { get { return false; } }
 
-#region http://hist.tk/hw/EventsIndexing
+#region http://hist.tk/ory/EventsIndexing
         /// <summary>
         /// как часто разные события встречаются в одном и том же году
         /// </summary>
